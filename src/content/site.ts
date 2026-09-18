@@ -60,5 +60,6 @@ export const confirmItems = [
   "Degree titles, institutions, timeline years, and role titles",
   "Remote, hybrid, and relocation preferences",
   "Résumé PDF file",
+  "YouTube links for the supporting work videos (all except Digital Winnifred)",
   "LinkedIn URL (currently using the likely /in/olytron profile)",
 ] as const;
