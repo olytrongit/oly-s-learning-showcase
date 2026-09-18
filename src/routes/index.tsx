@@ -43,7 +43,16 @@ function Index() {
             <div><strong>4</strong><span>learner contexts</span></div>
             <div><strong>1</strong><span>designer, end to end</span></div>
           </div>
-          <div className="hero-dewey" aria-hidden="true"><span className="dewey-face">••</span><i /><i /></div>
+          <div className="hero-rocket" aria-hidden="true">
+            <span className="rocket-orbit" />
+            <span className="rocket-ship">
+              <span className="rocket-body" />
+              <span className="rocket-window" />
+              <i className="rocket-fin rocket-fin--left" />
+              <i className="rocket-fin rocket-fin--right" />
+              <span className="rocket-flame" />
+            </span>
+          </div>
         </div>
       </section>
 

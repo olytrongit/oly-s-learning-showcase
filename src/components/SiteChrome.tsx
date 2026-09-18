@@ -15,7 +15,7 @@ export function SiteHeader() {
     <header className="site-header">
       <div className="site-header__inner">
         <Link to="/" className="brand" aria-label="Oly Balmokune, home">
-          <span className="dewey-mark" aria-hidden="true"><span /></span>
+          <span className="rocket-mark" aria-hidden="true" />
           <span>Oly<span className="text-coral">.</span></span>
         </Link>
         <nav className="desktop-nav" aria-label="Primary navigation">
