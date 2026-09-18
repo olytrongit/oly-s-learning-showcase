@@ -36,7 +36,7 @@ The configured pages are prerendered to static HTML. Upload the generated client
 
 ## Editing content
 
-Portfolio copy and structured project data live in `src/content/`. Site media references live with the project assets under `src/assets/`.
+Portfolio copy and structured project data live in `src/content/`. Site media lives under `public/media/`; the self-hosted Storyline packages live under `public/demos/`.
 
 ## Constraints
 
