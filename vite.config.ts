@@ -19,6 +19,7 @@ export default defineConfig({
       { path: "/case-studies/wellness-micro-learning" },
       { path: "/case-studies/immersive-storytelling-curriculum" },
       { path: "/case-studies/storyline-360-interactives" },
+      { path: "/supporting-work" },
       { path: "/about" },
     ],
     prerender: { enabled: true, autoStaticPathsDiscovery: false },
