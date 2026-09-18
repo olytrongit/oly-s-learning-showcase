@@ -21,6 +21,9 @@ export const Route = createFileRoute("/")({
 });
 
 function Index() {
+  const featuredStudy = caseStudies[0];
+  if (!featuredStudy) return null;
+
   return (
     <main>
       <section className="home-hero">
@@ -55,7 +58,7 @@ function Index() {
       <section className="work-section">
         <div className="shell">
           <div className="section-heading section-heading--row"><div><p className="eyebrow">Selected case studies</p><h2>Learning problems, solved.</h2></div><Link to="/case-studies" className="text-link">Compare all five <ArrowRight /></Link></div>
-          <div className="case-grid"><CaseStudyCard study={caseStudies[0]} featured />{caseStudies.slice(1).map((study) => <CaseStudyCard key={study.slug} study={study} />)}</div>
+          <div className="case-grid"><CaseStudyCard study={featuredStudy} featured />{caseStudies.slice(1).map((study) => <CaseStudyCard key={study.slug} study={study} />)}</div>
         </div>
       </section>
 

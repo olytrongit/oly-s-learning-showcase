@@ -6,6 +6,8 @@ import { caseStudies } from "@/content/case-studies";
 export function CaseStudyPage({ study }: { study: CaseStudy }) {
   const index = caseStudies.findIndex((item) => item.slug === study.slug);
   const next = caseStudies[(index + 1) % caseStudies.length];
+  if (!next) return null;
+
   return (
     <main>
       <section className={`case-hero accent-${study.accent}`}>
