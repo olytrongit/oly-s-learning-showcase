@@ -1,24 +1,72 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Link } from "@tanstack/react-router";
+import { ArrowRight, Mail } from "lucide-react";
+import { CaseStudyCard } from "@/components/CaseStudyCard";
+import { caseStudies } from "@/content/case-studies";
+import { site, supportingWork } from "@/content/site";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Oly Balmokune — Senior Instructional Designer" },
+      { name: "description", content: "Senior instructional designer who turns complex information into clear learning experiences—and builds the videos, interactives, and simulations himself." },
+      { property: "og:title", content: "Oly Balmokune — Senior Instructional Designer" },
+      { property: "og:description", content: "Learning design, built end to end: video, Storyline, curriculum, and XR." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+    links: [{ rel: "canonical", href: "/" }],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <main>
+      <section className="home-hero">
+        <div className="shell home-hero__inner">
+          <p className="status-pill"><span /> Senior Instructional Designer · Calgary</p>
+          <h1>Keep your knowledge.<br />Refresh your <em>delivery.</em></h1>
+          <p className="hero-lede">I design the learning, then build the experience myself—video, Storyline modules, Unity simulations. One person, end to end.</p>
+          <div className="hero-actions">
+            <Link to="/case-studies" className="button-primary">See the work <ArrowRight /></Link>
+            <a href={`mailto:${site.email}`} className="button-secondary"><Mail /> Email Oly</a>
+          </div>
+          <div className="proof-strip" aria-label="Portfolio highlights">
+            <div><strong>15+</strong><span>years in multimedia and XR</span></div>
+            <div><strong>5</strong><span>flagship learning case studies</span></div>
+            <div><strong>4</strong><span>learner contexts</span></div>
+            <div><strong>1</strong><span>designer, end to end</span></div>
+          </div>
+          <div className="hero-dewey" aria-hidden="true"><span className="dewey-face">••</span><i /><i /></div>
+        </div>
+      </section>
+
+      <section className="approach-section shell">
+        <div className="section-heading"><p className="eyebrow">The approach</p><h2>Start with the problem.<br />Choose the format second.</h2></div>
+        <blockquote>{site.philosophy}</blockquote>
+        <div className="approach-steps">
+          <article><span>01</span><h3>Understand</h3><p>The learner, their context, and what needs to change.</p></article>
+          <article><span>02</span><h3>Design</h3><p>The right practice, sequence, feedback, and format.</p></article>
+          <article><span>03</span><h3>Build</h3><p>The experience itself, with no handoff gap.</p></article>
+        </div>
+      </section>
+
+      <section className="work-section">
+        <div className="shell">
+          <div className="section-heading section-heading--row"><div><p className="eyebrow">Selected case studies</p><h2>Learning problems, solved.</h2></div><Link to="/case-studies" className="text-link">Compare all five <ArrowRight /></Link></div>
+          <div className="case-grid"><CaseStudyCard study={caseStudies[0]} featured />{caseStudies.slice(1).map((study) => <CaseStudyCard key={study.slug} study={study} />)}</div>
+        </div>
+      </section>
+
+      <section className="evidence-section shell">
+        <div className="section-heading"><p className="eyebrow">Supporting evidence</p><h2>Production skill, always in service of learning.</h2><p>Selected work that proves a useful capability—not a second career.</p></div>
+        <div className="evidence-list">{supportingWork.slice(0, 6).map((item) => <article key={item.title}><span>{item.type}</span><h3>{item.title}</h3><p>{item.proof}</p></article>)}</div>
+      </section>
+
+      <section className="contact-band">
+        <div className="shell contact-band__inner"><div><p className="eyebrow">Senior learning design, built end to end</p><h2>Let’s make the next program land.</h2></div><div><a className="button-primary" href={`mailto:${site.email}`}>{site.email}<ArrowRight /></a><a href={site.linkedin} target="_blank" rel="noreferrer" className="text-link">LinkedIn <ArrowRight /></a></div></div>
+      </section>
+    </main>
   );
 }
