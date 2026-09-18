@@ -1,9 +1,3 @@
-import waterAsset from "@/assets/water.png.asset.json";
-import xrAsset from "@/assets/xr.png.asset.json";
-import wellnessAsset from "@/assets/wellness.png.asset.json";
-import curriculumAsset from "@/assets/curriculum.png.asset.json";
-import storylineAsset from "@/assets/storyline.jpg.asset.json";
-
 export type CaseStudy = {
   slug: string;
   number: string;
@@ -21,6 +15,8 @@ export type CaseStudy = {
   mediaNote: string;
   image: string;
   imageAlt: string;
+  videos?: { title: string; youtubeId: string; poster: string }[];
+  demos?: { title: string; purpose: string; href: string }[];
 };
 
 export const caseStudies: CaseStudy[] = [
@@ -39,7 +35,7 @@ export const caseStudies: CaseStudy[] = [
     tools: ["Instructional design", "Motion design", "Character animation", "SME review"],
     accent: "sky",
     mediaNote: "Confirmed source image from the Water Works case study.",
-    image: waterAsset.url,
+    image: "/media/water.png",
     imageAlt: "Learning persona artwork from the Water Works for Kids project",
   },
   {
@@ -57,7 +53,7 @@ export const caseStudies: CaseStudy[] = [
     tools: ["Unity", "C#", "Meta Quest", "SketchUp", "Blender", "Spatial audio"],
     accent: "plum",
     mediaNote: "Confirmed source image from the XR simulation case study.",
-    image: xrAsset.url,
+    image: "/media/xr.png",
     imageAlt: "Mixed-reality safety simulation project visual",
   },
   {
@@ -75,8 +71,12 @@ export const caseStudies: CaseStudy[] = [
     tools: ["NotebookLM", "ChatGPT", "Veo 3", "ElevenLabs", "HeyGen", "Premiere Pro", "After Effects"],
     accent: "leaf",
     mediaNote: "Confirmed source image from the AI-assisted wellness project.",
-    image: wellnessAsset.url,
+    image: "/media/wellness.png",
     imageAlt: "Workplace wellness micro-learning project visual",
+    videos: [
+      { title: "Workplace wellness learning video", youtubeId: "0ugmiUneh_M", poster: "/media/wellness-video-1.jpg" },
+      { title: "Workplace wellness learning video", youtubeId: "y6UeWovMjDU", poster: "/media/wellness.png" },
+    ],
   },
   {
     slug: "immersive-storytelling-curriculum",
@@ -93,7 +93,7 @@ export const caseStudies: CaseStudy[] = [
     tools: ["Curriculum design", "Rubric design", "AR / VR", "360° video", "AI ethics"],
     accent: "coral",
     mediaNote: "Confirmed source image from the XR in Education case study.",
-    image: curriculumAsset.url,
+    image: "/media/curriculum.png",
     imageAlt: "Student immersive storytelling curriculum project visual",
   },
   {
@@ -111,8 +111,14 @@ export const caseStudies: CaseStudy[] = [
     tools: ["Articulate Storyline 360", "xAPI fundamentals", "Assessment design", "Game-based recall"],
     accent: "sun",
     mediaNote: "Confirmed source image from the Storyline demo suite.",
-    image: storylineAsset.url,
+    image: "/media/storyline.jpg",
     imageAlt: "Articulate Storyline interactive demo preview",
+    demos: [
+      { title: "NDA Drag & Drop", purpose: "Interactive assessment", href: "/demos/nda/story.html" },
+      { title: "Waterworks Jeopardy", purpose: "Gamified review", href: "/demos/jeopardy/story.html" },
+      { title: "Metal Memory Match", purpose: "Game-based recall", href: "/demos/memory/story.html" },
+      { title: "Intro to Nimble 2e", purpose: "Onboarding introduction", href: "/demos/nimble/story.html" },
+    ],
   },
 ];
 

@@ -14,6 +14,8 @@ export const Route = createFileRoute("/")({
       { property: "og:description", content: "Learning design, built end to end: video, Storyline, curriculum, and XR." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:image", content: "https://www.olytron.com/og-image.jpg" },
+      { name: "twitter:image", content: "https://www.olytron.com/og-image.jpg" },
     ],
     links: [{ rel: "canonical", href: "/" }],
   }),
