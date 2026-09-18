@@ -196,3 +196,5 @@ h1,h2,h3,p { overflow-wrap: break-word; }
 .support-item p { color: var(--muted-foreground); margin: 0; }
 .video-poster__fill { position: absolute; inset: 0; background: linear-gradient(135deg, color-mix(in oklab, var(--sky) 55%, var(--ink)), color-mix(in oklab, var(--coral) 45%, var(--ink))); }
 @media (max-width: 800px) { .support-item { grid-template-columns: 1fr; } }
+@media (max-width: 800px) { .evidence-row { grid-template-columns: 110px 1fr; } .evidence-row p { grid-column: 2; } }
+@media (max-width: 500px) { .evidence-row { grid-template-columns: 1fr; gap: .35rem; } .evidence-row p { grid-column: auto; } }
