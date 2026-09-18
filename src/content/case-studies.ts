@@ -13,6 +13,10 @@ export type CaseStudy = {
   tools: string[];
   accent: "sky" | "coral" | "leaf" | "plum" | "sun";
   mediaNote: string;
+  image: string;
+  imageAlt: string;
+  videos?: { title: string; youtubeId: string; poster: string }[];
+  demos?: { title: string; purpose: string; href: string }[];
 };
 
 export const caseStudies: CaseStudy[] = [
@@ -30,7 +34,9 @@ export const caseStudies: CaseStudy[] = [
     outcome: "The work demonstrates how animation, short-form learning, and character-driven storytelling can make public infrastructure understandable without removing the science.",
     tools: ["Instructional design", "Motion design", "Character animation", "SME review"],
     accent: "sky",
-    mediaNote: "[CONFIRM: media from /instructional-design/water-works]",
+    mediaNote: "Confirmed source image from the Water Works case study.",
+    image: "/media/water.png",
+    imageAlt: "Learning persona artwork from the Water Works for Kids project",
   },
   {
     slug: "xr-safety-simulation",
@@ -46,7 +52,9 @@ export const caseStudies: CaseStudy[] = [
     outcome: "The prototype demonstrates how immersive training can reduce dependence on physical mockups and support off-site onboarding by tying instruction directly to action and spatial decision-making.",
     tools: ["Unity", "C#", "Meta Quest", "SketchUp", "Blender", "Spatial audio"],
     accent: "plum",
-    mediaNote: "[CONFIRM: media from /instructional-design/xr-simulation]",
+    mediaNote: "Confirmed source image from the XR simulation case study.",
+    image: "/media/xr.png",
+    imageAlt: "Mixed-reality safety simulation project visual",
   },
   {
     slug: "wellness-micro-learning",
@@ -62,7 +70,13 @@ export const caseStudies: CaseStudy[] = [
     outcome: "The project shows that AI can accelerate learning-content production without replacing human review, design judgment, or message control.",
     tools: ["NotebookLM", "ChatGPT", "Veo 3", "ElevenLabs", "HeyGen", "Premiere Pro", "After Effects"],
     accent: "leaf",
-    mediaNote: "[CONFIRM: media from /instructional-design/healthcare and /ai-emerging-tools/ai-cinematics]",
+    mediaNote: "Confirmed source image from the AI-assisted wellness project.",
+    image: "/media/wellness.png",
+    imageAlt: "Workplace wellness micro-learning project visual",
+    videos: [
+      { title: "Workplace wellness learning video", youtubeId: "0ugmiUneh_M", poster: "/media/wellness-video-1.jpg" },
+      { title: "Workplace wellness learning video", youtubeId: "y6UeWovMjDU", poster: "/media/wellness.png" },
+    ],
   },
   {
     slug: "immersive-storytelling-curriculum",
@@ -78,7 +92,9 @@ export const caseStudies: CaseStudy[] = [
     outcome: "Students shipped community-focused immersive journalism projects while developing technical skill, collaboration habits, and critical awareness of emerging tools.",
     tools: ["Curriculum design", "Rubric design", "AR / VR", "360° video", "AI ethics"],
     accent: "coral",
-    mediaNote: "[CONFIRM: media from /mixed-reality/xr-in-education]",
+    mediaNote: "Confirmed source image from the XR in Education case study.",
+    image: "/media/curriculum.png",
+    imageAlt: "Student immersive storytelling curriculum project visual",
   },
   {
     slug: "storyline-360-interactives",
@@ -94,7 +110,15 @@ export const caseStudies: CaseStudy[] = [
     outcome: "The suite demonstrates practical Storyline range while keeping the learning purpose of each interaction visible.",
     tools: ["Articulate Storyline 360", "xAPI fundamentals", "Assessment design", "Game-based recall"],
     accent: "sun",
-    mediaNote: "[CONFIRM: demo packages from /public/demos/<name>/story.html]",
+    mediaNote: "Confirmed source image from the Storyline demo suite.",
+    image: "/media/storyline.jpg",
+    imageAlt: "Articulate Storyline interactive demo preview",
+    demos: [
+      { title: "NDA Drag & Drop", purpose: "Interactive assessment", href: "/demos/nda/story.html" },
+      { title: "Waterworks Jeopardy", purpose: "Gamified review", href: "/demos/jeopardy/story.html" },
+      { title: "Metal Memory Match", purpose: "Game-based recall", href: "/demos/memory/story.html" },
+      { title: "Intro to Nimble 2e", purpose: "Onboarding introduction", href: "/demos/nimble/story.html" },
+    ],
   },
 ];
 

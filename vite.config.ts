@@ -11,5 +11,16 @@ export default defineConfig({
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
     server: { entry: "server" },
+    pages: [
+      { path: "/" },
+      { path: "/case-studies" },
+      { path: "/case-studies/water-works-for-kids" },
+      { path: "/case-studies/xr-safety-simulation" },
+      { path: "/case-studies/wellness-micro-learning" },
+      { path: "/case-studies/immersive-storytelling-curriculum" },
+      { path: "/case-studies/storyline-360-interactives" },
+      { path: "/about" },
+    ],
+    prerender: { enabled: true, autoStaticPathsDiscovery: false },
   },
 });

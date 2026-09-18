@@ -14,6 +14,8 @@ export const Route = createFileRoute("/")({
       { property: "og:description", content: "Learning design, built end to end: video, Storyline, curriculum, and XR." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:image", content: "https://www.olytron.com/og-image.jpg" },
+      { name: "twitter:image", content: "https://www.olytron.com/og-image.jpg" },
     ],
     links: [{ rel: "canonical", href: "/" }],
   }),
@@ -21,6 +23,9 @@ export const Route = createFileRoute("/")({
 });
 
 function Index() {
+  const featuredStudy = caseStudies[0];
+  if (!featuredStudy) return null;
+
   return (
     <main>
       <section className="home-hero">
@@ -55,7 +60,7 @@ function Index() {
       <section className="work-section">
         <div className="shell">
           <div className="section-heading section-heading--row"><div><p className="eyebrow">Selected case studies</p><h2>Learning problems, solved.</h2></div><Link to="/case-studies" className="text-link">Compare all five <ArrowRight /></Link></div>
-          <div className="case-grid"><CaseStudyCard study={caseStudies[0]} featured />{caseStudies.slice(1).map((study) => <CaseStudyCard key={study.slug} study={study} />)}</div>
+          <div className="case-grid"><CaseStudyCard study={featuredStudy} featured />{caseStudies.slice(1).map((study) => <CaseStudyCard key={study.slug} study={study} />)}</div>
         </div>
       </section>
 

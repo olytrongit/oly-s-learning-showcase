@@ -2,10 +2,13 @@ import { Link } from "@tanstack/react-router";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import type { CaseStudy } from "@/content/case-studies";
 import { caseStudies } from "@/content/case-studies";
+import { LazyVideo } from "@/components/LazyVideo";
 
 export function CaseStudyPage({ study }: { study: CaseStudy }) {
   const index = caseStudies.findIndex((item) => item.slug === study.slug);
   const next = caseStudies[(index + 1) % caseStudies.length];
+  if (!next) return null;
+
   return (
     <main>
       <section className={`case-hero accent-${study.accent}`}>
@@ -17,7 +20,7 @@ export function CaseStudyPage({ study }: { study: CaseStudy }) {
               <h1>{study.title}</h1>
               <p className="case-promise">{study.promise}</p>
             </div>
-            <div className="case-hero__visual" aria-hidden="true"><span>{study.number}</span><div className="orbit orbit-a" /><div className="orbit orbit-b" /></div>
+            <div className="case-hero__visual"><img src={study.image} alt={study.imageAlt} /><span aria-hidden="true">{study.number}</span><div className="orbit orbit-a" /><div className="orbit orbit-b" /></div>
           </div>
         </div>
       </section>
@@ -37,7 +40,9 @@ export function CaseStudyPage({ study }: { study: CaseStudy }) {
       <section className="shell build-section">
         <div className="section-heading"><p className="eyebrow">What Oly built</p><h2>Design carried through production.</h2></div>
         <div className="build-list">{study.built.map((item) => <div key={item}><span aria-hidden="true" />{item}</div>)}</div>
-        <div className="media-stage"><div className="media-stage__art" aria-hidden="true"><span>{study.shortTitle}</span></div><p>{study.mediaNote}</p></div>
+        <div className="media-stage"><div className="media-stage__art"><img src={study.image} alt={study.imageAlt} loading="lazy" /></div><p>{study.mediaNote}</p></div>
+        {study.videos ? <div className="video-grid">{study.videos.map((video) => <LazyVideo key={video.youtubeId} {...video} />)}</div> : null}
+        {study.demos ? <div className="demo-grid" aria-label="Interactive demonstrations">{study.demos.map((demo) => <a key={demo.title} href={demo.href} target="_blank" rel="noreferrer"><span>{demo.purpose}</span><strong>{demo.title}</strong><ArrowRight aria-hidden="true" /></a>)}</div> : null}
       </section>
 
       <section className="outcome-band">
