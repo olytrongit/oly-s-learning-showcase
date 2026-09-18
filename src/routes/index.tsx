@@ -43,14 +43,16 @@ function Index() {
             <div><strong>4</strong><span>learner contexts</span></div>
             <div><strong>1</strong><span>designer, end to end</span></div>
           </div>
-          <div className="hero-rocket" aria-hidden="true">
-            <span className="rocket-orbit" />
-            <span className="rocket-ship">
-              <span className="rocket-body" />
-              <span className="rocket-window" />
-              <i className="rocket-fin rocket-fin--left" />
-              <i className="rocket-fin rocket-fin--right" />
-              <span className="rocket-flame" />
+          <div className="hero-starship" aria-hidden="true">
+            <span className="starship-orbit" />
+            <span className="starship">
+              <span className="starship-saucer"><i /></span>
+              <span className="starship-neck" />
+              <span className="starship-hull"><i /></span>
+              <span className="starship-pylon starship-pylon--left" />
+              <span className="starship-pylon starship-pylon--right" />
+              <span className="starship-nacelle starship-nacelle--left"><i /></span>
+              <span className="starship-nacelle starship-nacelle--right"><i /></span>
             </span>
           </div>
         </div>
