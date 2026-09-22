@@ -44,7 +44,7 @@ export function SiteFooter() {
         <div className="footer-links">
           <a href={`mailto:${site.email}`}>Email</a>
           <a href={site.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
-          <span className="confirm-link"><Download size={15} /> Résumé [CONFIRM]</span>
+          <a href={site.resume} download><Download size={15} /> Résumé</a>
         </div>
         <p>{site.tagline}</p>
       </div>

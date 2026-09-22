@@ -5,7 +5,7 @@ export const site = {
   tagline: "Keep your knowledge. Refresh your delivery.",
   email: "tobalmokune@olytron.com",
   linkedin: "https://www.linkedin.com/in/olytron",
-  resume: "[CONFIRM: résumé PDF]",
+  resume: "/Olivier-Balmokune-Resume.pdf",
   availability: "[CONFIRM: remote / hybrid / relocation line]",
   philosophy:
     "I begin with the learner, the context, and the challenge the experience needs to solve. From there, I choose the appropriate format for the job: video, structured onboarding, scenario-based learning, simulation, or modular educational content.",
@@ -14,7 +14,7 @@ export const site = {
 export const skillGroups = [
   {
     title: "Learning design",
-    items: ["Needs analysis", "Scenario-based learning", "Micro-learning", "Curriculum design", "Rubric design", "SME review cycles", "xAPI"],
+    items: ["Needs analysis", "Scenario-based learning", "Micro-learning", "Curriculum design", "Rubric design", "SME review cycles", "SCORM / xAPI", "LMS familiarity (Brightspace, Blackboard, SharePoint)"],
   },
   { title: "Authoring", items: ["Articulate Storyline 360", "Rive", "Figma"] },
   {
@@ -56,10 +56,8 @@ export const supportingWork: readonly SupportingItem[] = [
 ] as const;
 
 export const confirmItems = [
-  "Institution, course name, and terms taught for Immersive Storytelling Curriculum",
-  "Degree titles, institutions, timeline years, and role titles",
   "Remote, hybrid, and relocation preferences",
-  "Résumé PDF file",
+  "Course names for the two immersive storytelling courses at St. Clair College",
   "YouTube links for the supporting work videos (all except Digital Winnifred)",
   "LinkedIn URL (currently using the likely /in/olytron profile)",
 ] as const;
