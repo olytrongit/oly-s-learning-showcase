@@ -6,7 +6,7 @@ export const site = {
   email: "tobalmokune@olytron.com",
   linkedin: "https://www.linkedin.com/in/olytron",
   resume: "/Olivier-Balmokune-Resume.pdf",
-  availability: "[CONFIRM: remote / hybrid / relocation line]",
+  availability: "Open to remote roles or opportunities in Calgary, with relocation also considered.",
   philosophy:
     "I begin with the learner, the context, and the challenge the experience needs to solve. From there, I choose the appropriate format for the job: video, structured onboarding, scenario-based learning, simulation, or modular educational content.",
 } as const;
@@ -42,22 +42,15 @@ export type SupportingItem = {
 };
 
 export const supportingWork: readonly SupportingItem[] = [
-  { id: "dewey-water-works", title: "Dewey Water Works", type: "Video & motion", proof: "A mixed-media campaign of four educational videos and 24+ short learning clips makes technical processes approachable.", youtubeId: null },
-  { id: "our-time", title: "Our Time", type: "Video & motion", proof: "A Getty Images corporate film later used for employee onboarding demonstrates narrative pacing with a practical learning afterlife.", youtubeId: null },
-  { id: "recruitment", title: "Recruitment", type: "Video & motion", proof: "Wordless vector animation carries recruitment messaging across languages without costly localization.", youtubeId: null },
-  { id: "at-the-doctors", title: "At the Doctor’s", type: "Video & motion", proof: "A stock-footage commercial translated into a dozen languages demonstrates efficient, localization-ready production.", youtubeId: null },
-  { id: "yoga-legends", title: "Yoga Legends", type: "Video & motion", proof: "A children’s mindfulness tool combines vector animation, puppetry, keying, and compositing to model movement clearly.", youtubeId: null },
-  { id: "windsage", title: "Windsage", type: "Video & motion", proof: "A Rosie Award-nominated animated short demonstrates sustained visual storytelling and emotional pacing.", youtubeId: null },
-  { id: "windsor-tunnel", title: "Windsor Tunnel", type: "Video & motion", proof: "A 15-second, mobile-first infographic makes infrastructure information quickly understandable.", youtubeId: null },
-  { id: "industrial-xr", title: "Industrial XR", type: "Mixed reality", proof: "Unity prototypes for HoloLens 2 and Meta Quest connect instruction to action in space.", youtubeId: null },
+  { id: "dewey-water-works", title: "Dewey Water Works", type: "Video & motion", proof: "A mixed-media campaign of four educational videos and 24+ short learning clips makes technical processes approachable.", youtubeId: "swhlCsuwOuE" },
+  { id: "our-time", title: "Our Time", type: "Video & motion", proof: "A Getty Images corporate film later used for employee onboarding demonstrates narrative pacing with a practical learning afterlife.", youtubeId: "BJlq7TpMXPA" },
+  { id: "recruitment", title: "Recruitment", type: "Video & motion", proof: "Wordless vector animation carries recruitment messaging across languages without costly localization.", youtubeId: "rzeZO8LZHwA" },
+  { id: "at-the-doctors", title: "At the Doctor’s", type: "Video & motion", proof: "A stock-footage commercial translated into a dozen languages demonstrates efficient, localization-ready production.", youtubeId: "J7Y3UHyWva4" },
+  { id: "yoga-legends", title: "Yoga Legends", type: "Video & motion", proof: "A children’s mindfulness tool combines vector animation, puppetry, keying, and compositing to model movement clearly.", youtubeId: "jcTjrFRFlbo" },
+  { id: "windsage", title: "Windsage", type: "Video & motion", proof: "A Rosie Award-nominated animated short demonstrates sustained visual storytelling and emotional pacing.", youtubeId: "Aac8a5E9MVk" },
+  { id: "windsor-tunnel", title: "Windsor Tunnel", type: "Video & motion", proof: "A 15-second, mobile-first infographic makes infrastructure information quickly understandable.", youtubeId: "MZqqmi-3GeU" },
+  { id: "find-the-joy", title: "Find the Joy", type: "Video & motion", proof: "A focused wellness micro-learning video turns report findings into a short, practical message for busy employees.", youtubeId: "y6UeWovMjDU" },
   { id: "starjourn", title: "Starjourn", type: "Mixed reality", proof: "An Unreal Engine narrative explores how participant agency can coexist with cinematic pacing.", youtubeId: null },
   { id: "stole-my-heart", title: "Stole My Heart", type: "Mixed reality", proof: "An early VR character study explores presence, interaction, and narrative response.", youtubeId: null },
   { id: "digital-winnifred", title: "Digital Winnifred", type: "AI experiment", proof: "Combined visual and textual anchors improve identity consistency in generated video.", youtubeId: "Wp_gxKbP-VI" },
-] as const;
-
-export const confirmItems = [
-  "Remote, hybrid, and relocation preferences",
-  "Course names for the two immersive storytelling courses at St. Clair College",
-  "YouTube links for the supporting work videos (all except Digital Winnifred)",
-  "LinkedIn URL (currently using the likely /in/olytron profile)",
 ] as const;
