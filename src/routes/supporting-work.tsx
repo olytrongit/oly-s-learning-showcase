@@ -36,9 +36,7 @@ function SupportingWorkPage() {
                 <p>{item.proof}</p>
               </div>
               <div className="support-item__media">
-                {item.youtubeId
-                  ? <LazyVideo title={item.title} youtubeId={item.youtubeId} />
-                  : <p className="confirm-link">[CONFIRM: YouTube link for {item.title}]</p>}
+                <LazyVideo title={item.title} youtubeId={item.youtubeId} />
               </div>
             </article>
           ))}

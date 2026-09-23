@@ -4,7 +4,7 @@ export const site = {
   location: "Calgary, Alberta",
   tagline: "Keep your knowledge. Refresh your delivery.",
   email: "tobalmokune@olytron.com",
-  linkedin: "https://www.linkedin.com/in/olytron",
+  linkedin: "https://www.linkedin.com/in/olytron/",
   resume: "/Olivier-Balmokune-Resume.pdf",
   availability: "Open to remote roles or opportunities in Calgary, with relocation also considered.",
   philosophy:
@@ -37,8 +37,8 @@ export type SupportingItem = {
   title: string;
   type: string;
   proof: string;
-  /** YouTube video id; null until the link is confirmed. */
-  youtubeId: string | null;
+  /** YouTube video id. */
+  youtubeId: string;
 };
 
 export const supportingWork: readonly SupportingItem[] = [
