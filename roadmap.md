@@ -7,4 +7,4 @@
 - [x] Remote / Calgary / relocation preference — confirmed
 - [x] Course names for the two immersive storytelling courses at St. Clair College — confirmed
 - [x] Add supplied supporting-work videos, add Find the Joy, and remove Industrial XR — done
-- [ ] YouTube links for Starjourn and Stole My Heart — waiting on user
+- [x] YouTube links for Starjourn and Stole My Heart — confirmed

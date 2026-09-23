@@ -50,7 +50,7 @@ export const supportingWork: readonly SupportingItem[] = [
   { id: "windsage", title: "Windsage", type: "Video & motion", proof: "A Rosie Award-nominated animated short demonstrates sustained visual storytelling and emotional pacing.", youtubeId: "Aac8a5E9MVk" },
   { id: "windsor-tunnel", title: "Windsor Tunnel", type: "Video & motion", proof: "A 15-second, mobile-first infographic makes infrastructure information quickly understandable.", youtubeId: "MZqqmi-3GeU" },
   { id: "find-the-joy", title: "Find the Joy", type: "Video & motion", proof: "A focused wellness micro-learning video turns report findings into a short, practical message for busy employees.", youtubeId: "y6UeWovMjDU" },
-  { id: "starjourn", title: "Starjourn", type: "Mixed reality", proof: "An Unreal Engine narrative explores how participant agency can coexist with cinematic pacing.", youtubeId: null },
-  { id: "stole-my-heart", title: "Stole My Heart", type: "Mixed reality", proof: "An early VR character study explores presence, interaction, and narrative response.", youtubeId: null },
+  { id: "starjourn", title: "Starjourn", type: "Mixed reality", proof: "An Unreal Engine narrative explores how participant agency can coexist with cinematic pacing.", youtubeId: "adrgTI84dlI" },
+  { id: "stole-my-heart", title: "Stole My Heart", type: "Mixed reality", proof: "An early VR character study explores presence, interaction, and narrative response.", youtubeId: "gxC6UPSYjIw" },
   { id: "digital-winnifred", title: "Digital Winnifred", type: "AI experiment", proof: "Combined visual and textual anchors improve identity consistency in generated video.", youtubeId: "Wp_gxKbP-VI" },
 ] as const;
