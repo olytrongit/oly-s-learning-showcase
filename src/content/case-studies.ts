@@ -29,7 +29,7 @@ export const caseStudies: CaseStudy[] = [
     learner: "Elementary and middle-school students on municipal water-treatment facility tours and outreach programs.",
     challenge: "Dense engineering material had to be simplified without losing scientific accuracy—for a young, restless audience.",
     decisions: ["Break the documentation into small learning segments.", "Turn invisible and technical processes into visual explanations.", "Create Dewey, a recurring animated guide who makes the journey coherent.", "Review every segment with facility experts."],
-    built: ["4 educational videos", "24 micro-learning clips", "Motion-graphic concept cards", "The Dewey character"],
+    built: ["4 educational videos", "20+ micro-learning clips", "Motion-graphic concept cards", "The Dewey character"],
     outcome: "The work demonstrates how animation, short-form learning, and character-driven storytelling can make public infrastructure understandable without removing the science.",
     tools: ["Instructional design", "Motion design", "Character animation", "SME review"],
     accent: "sky",
