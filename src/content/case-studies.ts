@@ -12,7 +12,6 @@ export type CaseStudy = {
   outcome: string;
   tools: string[];
   accent: "sky" | "coral" | "leaf" | "plum" | "sun";
-  mediaNote: string;
   image: string;
   imageAlt: string;
   videos?: { title: string; youtubeId: string; poster: string }[];
@@ -34,7 +33,6 @@ export const caseStudies: CaseStudy[] = [
     outcome: "The work demonstrates how animation, short-form learning, and character-driven storytelling can make public infrastructure understandable without removing the science.",
     tools: ["Instructional design", "Motion design", "Character animation", "SME review"],
     accent: "sky",
-    mediaNote: "Confirmed source image from the Water Works case study.",
     image: "/media/water.png",
     imageAlt: "Learning persona artwork from the Water Works for Kids project",
   },
@@ -52,7 +50,6 @@ export const caseStudies: CaseStudy[] = [
     outcome: "The prototype demonstrates how immersive training can reduce dependence on physical mockups and support off-site onboarding by tying instruction directly to action and spatial decision-making.",
     tools: ["Unity", "C#", "Meta Quest", "SketchUp", "Blender", "Spatial audio"],
     accent: "plum",
-    mediaNote: "Confirmed source image from the XR simulation case study.",
     image: "/media/xr.png",
     imageAlt: "Mixed-reality safety simulation project visual",
   },
@@ -70,7 +67,6 @@ export const caseStudies: CaseStudy[] = [
     outcome: "The project shows that AI can accelerate learning-content production without replacing human review, design judgment, or message control.",
     tools: ["NotebookLM", "ChatGPT", "Veo 3", "ElevenLabs", "HeyGen", "Premiere Pro", "After Effects"],
     accent: "leaf",
-    mediaNote: "Confirmed source image from the AI-assisted wellness project.",
     image: "/media/wellness.png",
     imageAlt: "Workplace wellness micro-learning project visual",
     videos: [
@@ -92,7 +88,6 @@ export const caseStudies: CaseStudy[] = [
     outcome: "Students shipped community-focused immersive journalism projects while developing technical skill, collaboration habits, and critical awareness of emerging tools.",
     tools: ["Curriculum design", "Rubric design", "AR / VR", "360° video", "AI ethics"],
     accent: "coral",
-    mediaNote: "Confirmed source image from the XR in Education case study.",
     image: "/media/curriculum.png",
     imageAlt: "Student immersive storytelling curriculum project visual",
   },
@@ -110,7 +105,6 @@ export const caseStudies: CaseStudy[] = [
     outcome: "The suite demonstrates practical Storyline range while keeping the learning purpose of each interaction visible.",
     tools: ["Articulate Storyline 360", "xAPI fundamentals", "Assessment design", "Game-based recall"],
     accent: "sun",
-    mediaNote: "Confirmed source image from the Storyline demo suite.",
     image: "/media/storyline.jpg",
     imageAlt: "Articulate Storyline interactive demo preview",
     demos: [
