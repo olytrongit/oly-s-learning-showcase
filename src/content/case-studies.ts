@@ -59,7 +59,7 @@ export const caseStudies: CaseStudy[] = [
     title: "Wellness Micro-learning",
     shortTitle: "Wellness",
     kicker: "AI-assisted · Human-directed",
-    promise: "A useful report became two short videos people could actually use.",
+    promise: "Lengthy wellness report, transformed into two brief videos.",
     learner: "Corporate employees and managers on a digital workplace learning platform—busy people unlikely to read a long report.",
     challenge: "A 2025 workplace wellness report contained useful findings, but the report format itself was the barrier.",
     decisions: ["Transform the material rather than merely summarize it.", "Give each video one clear idea.", "Aim the two videos at different engagement stages.", "Design scripts, visuals, voiceover, and on-screen text as one clarity system.", "Keep human editorial control over every AI-assisted step."],
