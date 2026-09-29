@@ -42,7 +42,7 @@ export const caseStudies: CaseStudy[] = [
     title: "XR Safety Simulation",
     shortTitle: "XR Safety",
     kicker: "Experiential learning · Mixed reality",
-    promise: "Trainees practise the hazard before they meet it.",
+    promise: "Facing convincing hazards before the risk is real.",
     learner: "New employees and trainees in oil and gas, manufacturing, and large industrial facilities.",
     challenge: "Conventional safety training depends on costly physical mockups and on-site supervision, yet workers can still feel unprepared when they first enter a real facility.",
     decisions: ["Choose experiential learning over lecture.", "Let trainees explore, identify hazards, and practise procedures in context.", "Ground realism in actual facility layouts and subject-matter-expert input.", "Build modular environments so scenarios can recombine."],
