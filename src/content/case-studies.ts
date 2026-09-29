@@ -80,7 +80,7 @@ export const caseStudies: CaseStudy[] = [
     title: "Immersive Storytelling Curriculum",
     shortTitle: "Immersive Curriculum",
     kicker: "Curriculum design · Post-secondary",
-    promise: "Students went from no immersive-media background to shipping stories about their communities.",
+    promise: "From first headset to finished story.",
     learner: "Roughly 40 post-secondary students per term with no prior immersive-media background.",
     challenge: "Teach students to plan, produce, and critique AR, VR, and 360° video stories about their own communities.",
     decisions: ["Scaffold the curriculum from concept through production.", "Use group projects to make collaboration part of the learning.", "Align rubrics directly to learning outcomes.", "Use milestone feedback to surface quality issues early.", "Introduce AI-assisted workflows alongside explicit ethics discussion."],
