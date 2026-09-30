@@ -100,7 +100,7 @@ export const caseStudies: CaseStudy[] = [
     promise: "Four compact interactions show assessment, review, recall, and onboarding range.",
     learner: "Learners who need short, purposeful interactions rather than a single long course format.",
     challenge: "Demonstrate breadth in Articulate Storyline 360 across different learning goals and interaction patterns.",
-    decisions: ["Match each interaction pattern to a distinct learning purpose.", "Keep instructions and feedback immediately visible.", "Use game mechanics only where they reinforce retrieval and practice.", "Make every demo short enough for hiring managers to test quickly."],
+    decisions: ["Match each interaction pattern to a distinct learning purpose.", "Keep instructions and feedback immediately visible.", "Use game mechanics only where they reinforce retrieval and practice.", "Keep each demo short, focused, and self-explanatory."],
     built: ["NDA Drag & Drop—interactive assessment", "Waterworks Jeopardy—gamified review", "Metal Memory Match—game-based recall", "Intro to Nimble 2e—onboarding-style introduction"],
     outcome: "The suite demonstrates practical Storyline range while keeping the learning purpose of each interaction visible.",
     tools: ["Articulate Storyline 360", "xAPI fundamentals", "Assessment design", "Game-based recall"],
