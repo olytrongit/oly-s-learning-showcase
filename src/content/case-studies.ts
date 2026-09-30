@@ -84,7 +84,7 @@ export const caseStudies: CaseStudy[] = [
     learner: "Roughly 40 post-secondary students per term with no prior immersive-media background.",
     challenge: "Teach students to plan, produce, and critique AR, VR, and 360° video stories about their own communities.",
     decisions: ["Scaffold the curriculum from concept through production.", "Use group projects to make collaboration part of the learning.", "Align rubrics directly to learning outcomes.", "Build in milestone feedback to catch quality issues early.", "Introduce AI-assisted workflows alongside explicit ethics discussion."],
-    built: ["Intro to Design, Layout and Immersive Storytelling", "Intro to Animation with Social Media Integration", "Two courses per term at St. Clair College (Aug 2023 – May 2024)", "Course structure and assignments", "Outcome-aligned rubrics", "Milestone feedback cadence"],
+    built: ["Full course design: Intro to Design, Layout and Immersive Storytelling", "Full course design: Intro to Animation with Social Media Integration", "Assignments, assessments, and outcome-aligned rubrics", "Lecture presentations and seminar discussions on emerging media", "Hands-on training in immersive software and hardware", "Group AR, VR, and 360° journalism projects", "Milestone feedback cadence", "Delivered at St. Clair College, Aug 2023 – May 2024"],
     outcome: "Students shipped community-focused immersive journalism projects while developing technical skill, collaboration habits, and critical awareness of emerging tools.",
     tools: ["Curriculum design", "Rubric design", "AR / VR", "360° video", "AI ethics"],
     accent: "coral",
