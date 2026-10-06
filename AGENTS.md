@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Keep case-study visual assets referenced centrally in the case-study content model so cards and detail pages use the same approved imagery.

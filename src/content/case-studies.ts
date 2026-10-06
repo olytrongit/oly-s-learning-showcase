@@ -1,3 +1,9 @@
+import waterworksHero from "@/assets/waterworks-hero.jpg";
+import xrSafetyHero from "@/assets/xr-safety-hero.jpg";
+import wellnessHero from "@/assets/wellness-hero.jpg";
+import curriculumHero from "@/assets/curriculum-hero.jpg";
+import storylineHero from "@/assets/storyline-hero.jpg";
+
 export type CaseStudy = {
   slug: string;
   number: string;
@@ -33,8 +39,8 @@ export const caseStudies: CaseStudy[] = [
     outcome: "The work demonstrates how animation, short-form learning, and character-driven storytelling can make public infrastructure understandable without removing the science.",
     tools: ["Instructional design", "Motion design", "Character animation", "SME review"],
     accent: "sky",
-    image: "/media/water.png",
-    imageAlt: "Learning persona artwork from the Water Works for Kids project",
+    image: waterworksHero,
+    imageAlt: "Dewey and a fellow water-drop character teaching in a science lab with a microscope and chalkboard",
   },
   {
     slug: "xr-safety-simulation",
@@ -50,8 +56,8 @@ export const caseStudies: CaseStudy[] = [
     outcome: "The prototype demonstrates how immersive training can reduce dependence on physical mockups and support off-site onboarding by tying instruction directly to action and spatial decision-making.",
     tools: ["Unity", "C#", "Meta Quest", "SketchUp", "Blender", "Spatial audio"],
     accent: "plum",
-    image: "/media/xr.png",
-    imageAlt: "Mixed-reality safety simulation project visual",
+    image: xrSafetyHero,
+    imageAlt: "Two views of the XR safety simulation showing industrial machinery, hazard markings, and virtual hands",
   },
   {
     slug: "wellness-micro-learning",
@@ -67,8 +73,8 @@ export const caseStudies: CaseStudy[] = [
     outcome: "The project shows that AI can accelerate learning-content production without replacing human review, design judgment, or message control.",
     tools: ["NotebookLM", "ChatGPT", "Veo 3", "ElevenLabs", "HeyGen", "Premiere Pro", "After Effects"],
     accent: "leaf",
-    image: "/media/wellness.png",
-    imageAlt: "Workplace wellness micro-learning project visual",
+    image: wellnessHero,
+    imageAlt: "Two AI-generated wellness video stills showing adults and children playing with dogs in dinosaur costumes",
     videos: [
       { title: "Workplace wellness learning video", youtubeId: "0ugmiUneh_M", poster: "/media/wellness-video-1.jpg" },
       { title: "Workplace wellness learning video", youtubeId: "y6UeWovMjDU", poster: "/media/wellness.png" },
@@ -88,8 +94,8 @@ export const caseStudies: CaseStudy[] = [
     outcome: "Students shipped community-focused immersive journalism projects while developing technical skill, collaboration habits, and critical awareness of emerging tools.",
     tools: ["Curriculum design", "Rubric design", "AR / VR", "360° video", "AI ethics"],
     accent: "coral",
-    image: "/media/curriculum.png",
-    imageAlt: "Student immersive storytelling curriculum project visual",
+    image: curriculumHero,
+    imageAlt: "A tester using a VR headset beside the experience on a monitor, with an inset of a student-built AR record player",
   },
   {
     slug: "storyline-360-interactives",
@@ -105,8 +111,8 @@ export const caseStudies: CaseStudy[] = [
     outcome: "The suite demonstrates practical Storyline range while keeping the learning purpose of each interaction visible.",
     tools: ["Articulate Storyline 360", "xAPI fundamentals", "Assessment design", "Game-based recall"],
     accent: "sun",
-    image: "/media/storyline.jpg",
-    imageAlt: "Articulate Storyline interactive demo preview",
+    image: storylineHero,
+    imageAlt: "Screens from NDA assessment, Waterworks Jeopardy, and Metal Memory Match Storyline interactions",
     demos: [
       { title: "NDA Drag & Drop", purpose: "Interactive assessment", href: "/demos/nda/story.html" },
       { title: "Waterworks Jeopardy", purpose: "Gamified review", href: "/demos/jeopardy/story.html" },
