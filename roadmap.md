@@ -1,6 +1,6 @@
 # Roadmap
 
-- [ ] Replace composites with the five selected originals and restore zoomed-in framing.
+- [x] Replace composites with the five selected originals and restore zoomed-in framing.
 - [x] Refresh all five case-study hero/header visuals from supplied source images and verify their display.
 
 - [x] Build portfolio site (home, case studies, supporting work, about) — done
