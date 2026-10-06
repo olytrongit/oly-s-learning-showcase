@@ -1,8 +1,8 @@
-import waterworksHero from "@/assets/waterworks-hero.jpg";
-import xrSafetyHero from "@/assets/xr-safety-hero.jpg";
-import wellnessHero from "@/assets/wellness-hero.jpg";
-import curriculumHero from "@/assets/curriculum-hero.jpg";
-import storylineHero from "@/assets/storyline-hero.jpg";
+import waterworksHero from "@/assets/waterworks_kids.jpg.asset.json";
+import xrSafetyHero from "@/assets/XR_Safety_2.jpg.asset.json";
+import wellnessHero from "@/assets/lifespeak_2.jpg.asset.json";
+import curriculumHero from "@/assets/immersive_1.jpg.asset.json";
+import storylineHero from "@/assets/storyline_3.png.asset.json";
 
 export type CaseStudy = {
   slug: string;
@@ -39,8 +39,8 @@ export const caseStudies: CaseStudy[] = [
     outcome: "The work demonstrates how animation, short-form learning, and character-driven storytelling can make public infrastructure understandable without removing the science.",
     tools: ["Instructional design", "Motion design", "Character animation", "SME review"],
     accent: "sky",
-    image: waterworksHero,
-    imageAlt: "Dewey and a fellow water-drop character teaching in a science lab with a microscope and chalkboard",
+    image: waterworksHero.url,
+    imageAlt: "Dewey the water drop teaching in a science lab",
   },
   {
     slug: "xr-safety-simulation",
@@ -56,8 +56,8 @@ export const caseStudies: CaseStudy[] = [
     outcome: "The prototype demonstrates how immersive training can reduce dependence on physical mockups and support off-site onboarding by tying instruction directly to action and spatial decision-making.",
     tools: ["Unity", "C#", "Meta Quest", "SketchUp", "Blender", "Spatial audio"],
     accent: "plum",
-    image: xrSafetyHero,
-    imageAlt: "Two views of the XR safety simulation showing industrial machinery, hazard markings, and virtual hands",
+    image: xrSafetyHero.url,
+    imageAlt: "A scene from the Hitachi XR Safety experience",
   },
   {
     slug: "wellness-micro-learning",
@@ -73,8 +73,8 @@ export const caseStudies: CaseStudy[] = [
     outcome: "The project shows that AI can accelerate learning-content production without replacing human review, design judgment, or message control.",
     tools: ["NotebookLM", "ChatGPT", "Veo 3", "ElevenLabs", "HeyGen", "Premiere Pro", "After Effects"],
     accent: "leaf",
-    image: wellnessHero,
-    imageAlt: "Two AI-generated wellness video stills showing adults and children playing with dogs in dinosaur costumes",
+    image: wellnessHero.url,
+    imageAlt: "An AI-generated wellness video still showing two children playing with a dog while their mother looks on",
     videos: [
       { title: "Workplace wellness learning video", youtubeId: "0ugmiUneh_M", poster: "/media/wellness-video-1.jpg" },
       { title: "Workplace wellness learning video", youtubeId: "y6UeWovMjDU", poster: "/media/wellness.png" },
@@ -94,8 +94,8 @@ export const caseStudies: CaseStudy[] = [
     outcome: "Students shipped community-focused immersive journalism projects while developing technical skill, collaboration habits, and critical awareness of emerging tools.",
     tools: ["Curriculum design", "Rubric design", "AR / VR", "360° video", "AI ethics"],
     accent: "coral",
-    image: curriculumHero,
-    imageAlt: "A tester using a VR headset beside the experience on a monitor, with an inset of a student-built AR record player",
+    image: curriculumHero.url,
+    imageAlt: "A tester playing a virtual immersive experience beside a computer displaying the experience",
   },
   {
     slug: "storyline-360-interactives",
@@ -111,8 +111,8 @@ export const caseStudies: CaseStudy[] = [
     outcome: "The suite demonstrates practical Storyline range while keeping the learning purpose of each interaction visible.",
     tools: ["Articulate Storyline 360", "xAPI fundamentals", "Assessment design", "Game-based recall"],
     accent: "sun",
-    image: storylineHero,
-    imageAlt: "Screens from NDA assessment, Waterworks Jeopardy, and Metal Memory Match Storyline interactions",
+    image: storylineHero.url,
+    imageAlt: "Metal Memory Match game built in Articulate Storyline 360",
     demos: [
       { title: "NDA Drag & Drop", purpose: "Interactive assessment", href: "/demos/nda/story.html" },
       { title: "Waterworks Jeopardy", purpose: "Gamified review", href: "/demos/jeopardy/story.html" },
