@@ -6,7 +6,7 @@ export function CaseStudyCard({ study, featured = false }: { study: CaseStudy; f
   return (
     <article className={`case-card accent-${study.accent} ${featured ? "case-card--featured" : ""}`}>
       <div className="case-card__visual" aria-hidden="true">
-        <img src={study.image} alt="" loading="lazy" />
+        <img src={study.image} alt="" loading="lazy" className={study.imagePosition === "right" ? "object-right" : undefined} />
         <span className="case-card__number">{study.number}</span>
         <div className="case-card__signal"><i /><i /><i /></div>
       </div>

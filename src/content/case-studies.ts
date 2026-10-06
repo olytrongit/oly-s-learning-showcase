@@ -20,6 +20,7 @@ export type CaseStudy = {
   accent: "sky" | "coral" | "leaf" | "plum" | "sun";
   image: string;
   imageAlt: string;
+  imagePosition?: "right";
   videos?: { title: string; youtubeId: string; poster: string }[];
   demos?: { title: string; purpose: string; href: string }[];
 };
@@ -95,6 +96,7 @@ export const caseStudies: CaseStudy[] = [
     tools: ["Curriculum design", "Rubric design", "AR / VR", "360° video", "AI ethics"],
     accent: "coral",
     image: curriculumHero.url,
+    imagePosition: "right",
     imageAlt: "A tester playing a virtual immersive experience beside a computer displaying the experience",
   },
   {

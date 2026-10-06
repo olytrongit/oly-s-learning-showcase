@@ -20,7 +20,7 @@ export function CaseStudyPage({ study }: { study: CaseStudy }) {
               <h1>{study.title}</h1>
               <p className="case-promise">{study.promise}</p>
             </div>
-            <div className="case-hero__visual"><img src={study.image} alt={study.imageAlt} /><span aria-hidden="true">{study.number}</span><div className="orbit orbit-a" /><div className="orbit orbit-b" /></div>
+            <div className="case-hero__visual"><img src={study.image} alt={study.imageAlt} className={study.imagePosition === "right" ? "object-right" : undefined} /><span aria-hidden="true">{study.number}</span><div className="orbit orbit-a" /><div className="orbit orbit-b" /></div>
           </div>
         </div>
       </section>
