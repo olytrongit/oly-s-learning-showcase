@@ -1,6 +1,6 @@
 # Roadmap
 
-- [ ] Refresh all five case-study hero/header visuals from supplied source images and verify their display.
+- [x] Refresh all five case-study hero/header visuals from supplied source images and verify their display.
 
 - [x] Build portfolio site (home, case studies, supporting work, about) — done
 - [x] Supporting work page with per-item anchors — done
