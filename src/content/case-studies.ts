@@ -4,7 +4,7 @@ import wellnessHero from "@/assets/lifespeak_2.jpg.asset.json";
 import curriculumHero from "@/assets/immersive_1.jpg.asset.json";
 import storylineHero from "@/assets/storyline_3.png.asset.json";
 import settlingDiagram from "@/assets/settling_1.jpg.asset.json";
-import xrNexus from "@/assets/Nexus_3.jpg.asset.json";
+import xrPersona from "@/assets/persona_Ben_West.png.asset.json";
 import wellnessStill from "@/assets/lifespeak_1.jpeg.asset.json";
 import curriculumBuild from "@/assets/immersive_2.jpg.asset.json";
 import storylineBuild from "@/assets/storyline_2.png.asset.json";
@@ -68,8 +68,8 @@ export const caseStudies: CaseStudy[] = [
     accent: "plum",
     image: xrSafetyHero.url,
     imageAlt: "A scene from the Hitachi XR Safety experience",
-    buildImage: xrNexus.url,
-    buildImageAlt: "First-person view from the XR Safety simulation: a cyan virtual hand aims a laser pointer at a wall panel labelled Faulty Tank, Section A, in a utility room lined with yellow pressurised gas cylinders on metal racks and a server rack with patch cables.",
+    buildImage: xrPersona.url,
+    buildImageAlt: "Learner persona card for Ben West, a 27-year-old new industrial trainee: an illustrated avatar in a high-visibility safety vest beside profile details and a summary, above three panels covering content knowledge, motivation for the course, and engagement strategies.",
   },
   {
     slug: "wellness-micro-learning",
