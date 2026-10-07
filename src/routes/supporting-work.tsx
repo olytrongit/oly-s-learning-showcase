@@ -20,13 +20,15 @@ export const Route = createFileRoute("/supporting-work")({
 function SupportingWorkPage() {
   return (
     <main id="main">
-      <section className="shell supporting-section">
-        <div className="section-heading">
+      <section className="index-hero">
+        <div className="shell">
           <p className="eyebrow">Supporting work</p>
-          <h2>Production skill, always in service of learning.</h2>
+          <h1>Production skill, always in service of learning.</h1>
           <p>Each piece is here for one reason: the learning capability it proves. Case studies carry the full design story.</p>
         </div>
+      </section>
 
+      <section className="shell supporting-section">
         <div className="support-stack">
           {supportingWork.map((item) => (
             <article key={item.id} id={item.id} className="support-item">
