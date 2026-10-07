@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Play } from "lucide-react";
 
-export function LazyVideo({ title, youtubeId, poster }: { title: string; youtubeId: string; poster?: string }) {
+export function LazyVideo({ title, youtubeId, poster }: { title: string; youtubeId: string; poster?: string | undefined }) {
   const [playing, setPlaying] = useState(false);
 
   if (playing) {

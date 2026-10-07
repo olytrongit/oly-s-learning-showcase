@@ -36,7 +36,7 @@ function SupportingWorkPage() {
                 <p>{item.proof}</p>
               </div>
               <div className="support-item__media">
-                <LazyVideo title={item.title} youtubeId={item.youtubeId} />
+                <LazyVideo title={item.title} youtubeId={item.youtubeId} poster={item.poster} />
               </div>
             </article>
           ))}
