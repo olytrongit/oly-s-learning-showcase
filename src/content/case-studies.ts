@@ -7,6 +7,7 @@ import settlingDiagram from "@/assets/settling_1.jpg.asset.json";
 import xrNexus from "@/assets/Nexus_3.jpg.asset.json";
 import wellnessStill from "@/assets/lifespeak_1.jpeg.asset.json";
 import curriculumBuild from "@/assets/immersive_2.jpg.asset.json";
+import storylineBuild from "@/assets/storyline_2.png.asset.json";
 
 export type CaseStudy = {
   slug: string;
@@ -129,6 +130,8 @@ export const caseStudies: CaseStudy[] = [
     accent: "sun",
     image: storylineHero.url,
     imageAlt: "Metal Memory Match game built in Articulate Storyline 360",
+    buildImage: storylineBuild.url,
+    buildImageAlt: "A Waterworks Jeopardy game screen showing a multiple-choice question about which measurement shows whether water is too acidic, with four answer buttons: Turbidity, Salinity, pH, and Density",
     demos: [
       { title: "NDA Drag & Drop", purpose: "Interactive assessment", href: "/demos/nda/story.html" },
       { title: "Waterworks Jeopardy", purpose: "Gamified review", href: "/demos/jeopardy/story.html" },
