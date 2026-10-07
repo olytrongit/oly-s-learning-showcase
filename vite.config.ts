@@ -21,6 +21,7 @@ export default defineConfig({
       { path: "/case-studies/storyline-360-interactives" },
       { path: "/supporting-work" },
       { path: "/about" },
+      { path: "/contact" },
     ],
     prerender: { enabled: true, autoStaticPathsDiscovery: false },
   },
