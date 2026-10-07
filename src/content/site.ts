@@ -2,6 +2,7 @@ import doctorPoster from "@/assets/doctor.jpg.asset.json";
 import deweyPoster from "@/assets/dewey.jpg.asset.json";
 import ourTimePoster from "@/assets/ourtime.jpg.asset.json";
 import recruitmentPoster from "@/assets/recruitment.jpg.asset.json";
+import tunnelPoster from "@/assets/tunnel.png.asset.json";
 import windsagePoster from "@/assets/windsage_2.jpg.asset.json";
 import yogaPoster from "@/assets/yoga_5.jpg.asset.json";
 
@@ -57,7 +58,7 @@ export const supportingWork: readonly SupportingItem[] = [
   { id: "at-the-doctors", title: "At the Doctor’s", type: "Video & motion", proof: "A stock-footage commercial translated into a dozen languages demonstrates efficient, localization-ready production.", youtubeId: "J7Y3UHyWva4", poster: doctorPoster.url },
   { id: "yoga-legends", title: "Yoga Legends", type: "Video & motion", proof: "A children’s mindfulness tool combines vector animation, puppetry, keying, and compositing to model movement clearly.", youtubeId: "jcTjrFRFlbo", poster: yogaPoster.url },
   { id: "windsage", title: "Windsage", type: "Video & motion", proof: "A Rosie Award-nominated animated short demonstrates sustained visual storytelling and emotional pacing.", youtubeId: "Aac8a5E9MVk", poster: windsagePoster.url },
-  { id: "windsor-tunnel", title: "Windsor Tunnel", type: "Video & motion", proof: "A 15-second, mobile-first infographic makes infrastructure information quickly understandable.", youtubeId: "MZqqmi-3GeU" },
+  { id: "windsor-tunnel", title: "Windsor Tunnel", type: "Video & motion", proof: "A 15-second, mobile-first infographic makes infrastructure information quickly understandable.", youtubeId: "MZqqmi-3GeU", poster: tunnelPoster.url },
   { id: "find-the-joy", title: "Find the Joy", type: "Video & motion", proof: "A focused wellness micro-learning video turns report findings into a short, practical message for busy employees.", youtubeId: "y6UeWovMjDU" },
   { id: "starjourn", title: "Starjourn", type: "Mixed reality", proof: "An Unreal Engine narrative explores how participant agency can coexist with cinematic pacing.", youtubeId: "adrgTI84dlI" },
   { id: "stole-my-heart", title: "Stole My Heart", type: "Mixed reality", proof: "An early VR character study explores presence, interaction, and narrative response.", youtubeId: "gxC6UPSYjIw" },
