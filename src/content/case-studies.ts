@@ -8,6 +8,7 @@ import xrPersona from "@/assets/persona_Ben_West.png.asset.json";
 import wellnessStill from "@/assets/lifespeak_1.jpeg.asset.json";
 import curriculumBuild from "@/assets/immersive_2.jpg.asset.json";
 import storylineBuild from "@/assets/storyline_2.png.asset.json";
+import wellnessDogPoster from "@/assets/dog_licking_face_16_9.jpg.asset.json";
 
 export type CaseStudy = {
   slug: string;
@@ -91,7 +92,7 @@ export const caseStudies: CaseStudy[] = [
     buildImageAlt: "A still from the wellness video: two adults sit laughing on a lawn with cooking pots on their heads, a dog in a dinosaur costume between them, while an older woman claps from a porch chair",
     videos: [
       { title: "Workplace wellness learning video", youtubeId: "0ugmiUneh_M", poster: "/media/wellness-video-1.jpg" },
-      { title: "Workplace wellness learning video", youtubeId: "y6UeWovMjDU", poster: "/media/wellness.png" },
+      { title: "Workplace wellness learning video", youtubeId: "y6UeWovMjDU", poster: wellnessDogPoster.url },
     ],
   },
   {
