@@ -7,6 +7,7 @@ import recruitmentPoster from "@/assets/recruitment.jpg.asset.json";
 import starjournPoster from "@/assets/starjourn.jpg.asset.json";
 import tunnelPoster from "@/assets/tunnel.png.asset.json";
 import windsagePoster from "@/assets/windsage_2.jpg.asset.json";
+import winniePoster from "@/assets/winnie.png.asset.json";
 import yogaPoster from "@/assets/yoga_5.jpg.asset.json";
 
 export const site = {
@@ -65,5 +66,5 @@ export const supportingWork: readonly SupportingItem[] = [
   { id: "find-the-joy", title: "Find the Joy", type: "Video & motion", proof: "A focused wellness micro-learning video turns report findings into a short, practical message for busy employees.", youtubeId: "y6UeWovMjDU", poster: joyPoster.url },
   { id: "starjourn", title: "Starjourn", type: "Mixed reality", proof: "An Unreal Engine narrative explores how participant agency can coexist with cinematic pacing.", youtubeId: "adrgTI84dlI", poster: starjournPoster.url },
   { id: "stole-my-heart", title: "Stole My Heart", type: "Mixed reality", proof: "An early VR character study explores presence, interaction, and narrative response.", youtubeId: "gxC6UPSYjIw", poster: heartPoster.url },
-  { id: "digital-winnifred", title: "Digital Winnifred", type: "AI experiment", proof: "Combined visual and textual anchors improve identity consistency in generated video.", youtubeId: "Wp_gxKbP-VI" },
+  { id: "digital-winnifred", title: "Digital Winnifred", type: "AI experiment", proof: "Combined visual and textual anchors improve identity consistency in generated video.", youtubeId: "Wp_gxKbP-VI", poster: winniePoster.url },
 ] as const;
