@@ -1,3 +1,5 @@
+import deweyPoster from "@/assets/dewey.jpg.asset.json";
+
 export const site = {
   name: "Oly Balmokune",
   role: "Senior Instructional Designer",
@@ -39,10 +41,12 @@ export type SupportingItem = {
   proof: string;
   /** YouTube video id. */
   youtubeId: string;
+  /** Optional thumbnail shown before the video is played. */
+  poster?: string;
 };
 
 export const supportingWork: readonly SupportingItem[] = [
-  { id: "dewey-water-works", title: "Dewey Water Works", type: "Video & motion", proof: "A mixed-media campaign of four educational videos and 20+ short learning clips makes technical processes approachable.", youtubeId: "swhlCsuwOuE" },
+  { id: "dewey-water-works", title: "Dewey Water Works", type: "Video & motion", proof: "A mixed-media campaign of four educational videos and 20+ short learning clips makes technical processes approachable.", youtubeId: "swhlCsuwOuE", poster: deweyPoster.url },
   { id: "our-time", title: "Our Time", type: "Video & motion", proof: "A Getty Images corporate film later used for employee onboarding demonstrates narrative pacing with a practical learning afterlife.", youtubeId: "BJlq7TpMXPA" },
   { id: "recruitment", title: "Recruitment", type: "Video & motion", proof: "Wordless vector animation carries recruitment messaging across languages without costly localization.", youtubeId: "rzeZO8LZHwA" },
   { id: "at-the-doctors", title: "At the Doctor’s", type: "Video & motion", proof: "A stock-footage commercial translated into a dozen languages demonstrates efficient, localization-ready production.", youtubeId: "J7Y3UHyWva4" },
