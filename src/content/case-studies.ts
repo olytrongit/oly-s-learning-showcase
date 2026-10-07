@@ -6,6 +6,7 @@ import storylineHero from "@/assets/storyline_3.png.asset.json";
 import settlingDiagram from "@/assets/settling_1.jpg.asset.json";
 import xrNexus from "@/assets/Nexus_3.jpg.asset.json";
 import wellnessStill from "@/assets/lifespeak_1.jpeg.asset.json";
+import curriculumBuild from "@/assets/immersive_2.jpg.asset.json";
 
 export type CaseStudy = {
   slug: string;
@@ -109,6 +110,8 @@ export const caseStudies: CaseStudy[] = [
     image: curriculumHero.url,
     imagePosition: "right",
     imageAlt: "A tester playing a virtual immersive experience beside a computer displaying the experience",
+    buildImage: curriculumBuild.url,
+    buildImageAlt: "A 3D-rendered scene of a wooden desk holding a red record turntable, a vinyl record, an album sleeve, and a row of upright album cases, with the words \u201cPress here!\u201d in front of them",
   },
   {
     slug: "storyline-360-interactives",
