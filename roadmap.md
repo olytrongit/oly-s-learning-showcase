@@ -1,6 +1,6 @@
 # Roadmap
 
-- [x] Add variance to the case-study presentation — Water Works, XR Safety, Wellness, and Immersive Curriculum now show their own section image under "Design carried through production".
+- [x] Add variance to the case-study presentation — all five case studies now show their own section image under "Design carried through production".
 
 - [x] Replace composites with the five selected originals and restore zoomed-in framing.
 - [x] Refresh all five case-study hero/header visuals from supplied source images and verify their display.
