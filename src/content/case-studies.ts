@@ -4,6 +4,7 @@ import wellnessHero from "@/assets/lifespeak_2.jpg.asset.json";
 import curriculumHero from "@/assets/immersive_1.jpg.asset.json";
 import storylineHero from "@/assets/storyline_3.png.asset.json";
 import settlingDiagram from "@/assets/settling_1.jpg.asset.json";
+import xrNexus from "@/assets/Nexus_3.jpg.asset.json";
 
 export type CaseStudy = {
   slug: string;
@@ -64,6 +65,8 @@ export const caseStudies: CaseStudy[] = [
     accent: "plum",
     image: xrSafetyHero.url,
     imageAlt: "A scene from the Hitachi XR Safety experience",
+    buildImage: xrNexus.url,
+    buildImageAlt: "First-person view from the XR Safety simulation: a cyan virtual hand aims a laser pointer at a wall panel labelled Faulty Tank, Section A, in a utility room lined with yellow pressurised gas cylinders on metal racks and a server rack with patch cables.",
   },
   {
     slug: "wellness-micro-learning",
