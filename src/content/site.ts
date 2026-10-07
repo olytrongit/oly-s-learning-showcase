@@ -1,3 +1,4 @@
+import doctorPoster from "@/assets/doctor.jpg.asset.json";
 import deweyPoster from "@/assets/dewey.jpg.asset.json";
 import ourTimePoster from "@/assets/ourtime.jpg.asset.json";
 import recruitmentPoster from "@/assets/recruitment.jpg.asset.json";
@@ -51,7 +52,7 @@ export const supportingWork: readonly SupportingItem[] = [
   { id: "dewey-water-works", title: "Dewey Water Works", type: "Video & motion", proof: "A mixed-media campaign of four educational videos and 20+ short learning clips makes technical processes approachable.", youtubeId: "swhlCsuwOuE", poster: deweyPoster.url },
   { id: "our-time", title: "Our Time", type: "Video & motion", proof: "A Getty Images corporate film later used for employee onboarding demonstrates narrative pacing with a practical learning afterlife.", youtubeId: "BJlq7TpMXPA", poster: ourTimePoster.url },
   { id: "recruitment", title: "Recruitment", type: "Video & motion", proof: "Wordless vector animation carries recruitment messaging across languages without costly localization.", youtubeId: "rzeZO8LZHwA", poster: recruitmentPoster.url },
-  { id: "at-the-doctors", title: "At the Doctor’s", type: "Video & motion", proof: "A stock-footage commercial translated into a dozen languages demonstrates efficient, localization-ready production.", youtubeId: "J7Y3UHyWva4" },
+  { id: "at-the-doctors", title: "At the Doctor’s", type: "Video & motion", proof: "A stock-footage commercial translated into a dozen languages demonstrates efficient, localization-ready production.", youtubeId: "J7Y3UHyWva4", poster: doctorPoster.url },
   { id: "yoga-legends", title: "Yoga Legends", type: "Video & motion", proof: "A children’s mindfulness tool combines vector animation, puppetry, keying, and compositing to model movement clearly.", youtubeId: "jcTjrFRFlbo" },
   { id: "windsage", title: "Windsage", type: "Video & motion", proof: "A Rosie Award-nominated animated short demonstrates sustained visual storytelling and emotional pacing.", youtubeId: "Aac8a5E9MVk" },
   { id: "windsor-tunnel", title: "Windsor Tunnel", type: "Video & motion", proof: "A 15-second, mobile-first infographic makes infrastructure information quickly understandable.", youtubeId: "MZqqmi-3GeU" },
