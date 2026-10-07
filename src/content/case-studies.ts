@@ -3,6 +3,7 @@ import xrSafetyHero from "@/assets/XR_Safety_2.jpg.asset.json";
 import wellnessHero from "@/assets/lifespeak_2.jpg.asset.json";
 import curriculumHero from "@/assets/immersive_1.jpg.asset.json";
 import storylineHero from "@/assets/storyline_3.png.asset.json";
+import settlingDiagram from "@/assets/settling_1.jpg.asset.json";
 
 export type CaseStudy = {
   slug: string;
@@ -21,6 +22,8 @@ export type CaseStudy = {
   image: string;
   imageAlt: string;
   imagePosition?: "right";
+  buildImage?: string;
+  buildImageAlt?: string;
   videos?: { title: string; youtubeId: string; poster: string }[];
   demos?: { title: string; purpose: string; href: string }[];
 };
@@ -42,6 +45,8 @@ export const caseStudies: CaseStudy[] = [
     accent: "sky",
     image: waterworksHero.url,
     imageAlt: "Dewey the water drop teaching in a science lab",
+    buildImage: settlingDiagram.url,
+    buildImageAlt: "Diagram of settling and sedimentation in a water treatment clarifier: water arrives from coagulation and flocculation, particles settle toward the tank floor, plate settlers and weirs and troughs collect clarified water, and sediment drains to the sanitary sewer.",
   },
   {
     slug: "xr-safety-simulation",
