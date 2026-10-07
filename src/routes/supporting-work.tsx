@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import { LazyVideo } from "@/components/LazyVideo";
-import { site, supportingWork } from "@/content/site";
+import { supportingWork } from "@/content/site";
 
 export const Route = createFileRoute("/supporting-work")({
   head: () => ({
@@ -50,7 +50,7 @@ function SupportingWorkPage() {
           <div><p className="eyebrow">Senior learning design, built end to end</p><h2>See the design thinking behind it.</h2></div>
           <div>
             <Link className="button-primary" to="/case-studies">Read the case studies<ArrowRight /></Link>
-            <a className="text-link" href={`mailto:${site.email}`}>{site.email} <ArrowRight /></a>
+            <Link className="text-link" to="/contact">Contact Oly <ArrowRight /></Link>
           </div>
         </div>
       </section>

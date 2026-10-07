@@ -14,3 +14,7 @@
 - [x] Add supplied supporting-work videos, add Find the Joy, and remove Industrial XR — done
 - [x] YouTube links for Starjourn and Stole My Heart — confirmed
 - [x] Supporting-work video thumbnails: all eleven videos now show their own picture (Dewey Water Works, Our Time, Recruitment, At the Doctor's, Yoga Legends, Windsage, Windsor Tunnel, Find the Joy, Starjourn, Stole My Heart, Digital Winnifred).
+
+## Open
+- [ ] Contact form page with honeypot (in progress)
+- [ ] Email delivery of submissions to olytron address — needs verified domain; confirm with user

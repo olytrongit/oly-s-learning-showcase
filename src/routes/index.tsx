@@ -35,7 +35,7 @@ function Index() {
           <p className="hero-lede">I design the learning, then build the experience myself—video, Storyline modules, Unity simulations. One person, end to end.</p>
           <div className="hero-actions">
             <Link to="/case-studies" className="button-primary">See the work <ArrowRight /></Link>
-            <a href={`mailto:${site.email}`} className="button-secondary"><Mail /> Email Oly</a>
+            <Link to="/contact" className="button-secondary"><Mail /> Contact Oly</Link>
           </div>
           <div className="proof-strip" aria-label="Portfolio highlights">
             <div><strong>15+</strong><span>years in multimedia and XR</span></div>
@@ -81,7 +81,7 @@ function Index() {
       </section>
 
       <section className="contact-band">
-        <div className="shell contact-band__inner"><div><p className="eyebrow">Senior learning design, built end to end</p><h2>Let’s make the next program land.</h2></div><div><a className="button-primary" href={`mailto:${site.email}`}>{site.email}<ArrowRight /></a><a href={site.linkedin} target="_blank" rel="noreferrer" className="text-link">LinkedIn <ArrowRight /></a></div></div>
+        <div className="shell contact-band__inner"><div><p className="eyebrow">Senior learning design, built end to end</p><h2>Let’s make the next program land.</h2></div><div><Link className="button-primary" to="/contact">Start a conversation<ArrowRight /></Link><a href={site.linkedin} target="_blank" rel="noreferrer" className="text-link">LinkedIn <ArrowRight /></a></div></div>
       </section>
     </main>
   );

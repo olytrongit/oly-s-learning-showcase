@@ -8,6 +8,7 @@ const nav = [
   { to: "/case-studies", label: "Case studies" },
   { to: "/supporting-work", label: "Supporting work" },
   { to: "/about", label: "About" },
+  { to: "/contact", label: "Contact" },
 ] as const;
 
 export function SiteHeader() {
@@ -21,16 +22,14 @@ export function SiteHeader() {
         </Link>
         <nav className="desktop-nav" aria-label="Primary navigation">
           {nav.map((item) => <Link key={item.to} to={item.to} activeProps={{ className: "is-active" }}>{item.label}</Link>)}
-          <a href={`mailto:${site.email}`}>Contact</a>
         </nav>
-        <a className="header-cta" href={`mailto:${site.email}`}>Start a conversation</a>
+        <Link className="header-cta" to="/contact">Start a conversation</Link>
         <Button className="menu-button" variant="ghost" size="icon" aria-label={open ? "Close menu" : "Open menu"} aria-expanded={open} onClick={() => setOpen((value) => !value)}>
           {open ? <X /> : <Menu />}
         </Button>
       </div>
       {open && <nav className="mobile-nav" aria-label="Mobile navigation">
         {nav.map((item) => <Link key={item.to} to={item.to} onClick={() => setOpen(false)}>{item.label}</Link>)}
-        <a href={`mailto:${site.email}`}>Contact</a>
       </nav>}
     </header>
   );
@@ -42,7 +41,7 @@ export function SiteFooter() {
       <div className="site-footer__inner">
         <div><strong>{site.name}</strong><span>{site.role} · {site.location}</span></div>
         <div className="footer-links">
-          <a href={`mailto:${site.email}`}>Email</a>
+          <Link to="/contact">Contact</Link>
           <a href={site.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
           <a href={site.resume} download><Download size={15} /> Résumé</a>
         </div>
