@@ -16,5 +16,5 @@
 - [x] Supporting-work video thumbnails: all eleven videos now show their own picture (Dewey Water Works, Our Time, Recruitment, At the Doctor's, Yoga Legends, Windsage, Windsor Tunnel, Find the Joy, Starjourn, Stole My Heart, Digital Winnifred).
 
 ## Open
-- [ ] Contact form page with honeypot (in progress)
-- [ ] Email delivery of submissions to olytron address — needs verified domain; confirm with user
+- [x] Contact form page with honeypot — live at /contact, tested end to end
+- [ ] Email delivery of submissions to olytron address — blocked: needs paid plan + verified olytron.com domain (setup offered to user)
