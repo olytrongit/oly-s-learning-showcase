@@ -91,8 +91,8 @@ export const caseStudies: CaseStudy[] = [
     buildImage: wellnessStill.url,
     buildImageAlt: "A still from the wellness video: two adults sit laughing on a lawn with cooking pots on their heads, a dog in a dinosaur costume between them, while an older woman claps from a porch chair",
     videos: [
-      { title: "Workplace wellness learning video", youtubeId: "0ugmiUneh_M", poster: "/media/wellness-video-1.jpg" },
-      { title: "Workplace wellness learning video", youtubeId: "y6UeWovMjDU", poster: wellnessDogPoster.url },
+      { title: "Friendly Advice", youtubeId: "0ugmiUneh_M", poster: "/media/wellness-video-1.jpg" },
+      { title: "Finding Joy", youtubeId: "y6UeWovMjDU", poster: wellnessDogPoster.url },
     ],
   },
   {
