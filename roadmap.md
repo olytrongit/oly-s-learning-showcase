@@ -11,9 +11,9 @@
 - [x] LinkedIn URL — confirmed
 - [x] Remote / Calgary / relocation preference — confirmed
 - [x] Course names for the two immersive storytelling courses at St. Clair College — confirmed
-- [x] Add supplied supporting-work videos, add Find the Joy, and remove Industrial XR — done
+- [x] Add supplied supporting-work videos, add Finding Joy, and remove Industrial XR — done
 - [x] YouTube links for Starjourn and Stole My Heart — confirmed
-- [x] Supporting-work video thumbnails: all eleven videos now show their own picture (Dewey Water Works, Our Time, Recruitment, At the Doctor's, Yoga Legends, Windsage, Windsor Tunnel, Find the Joy, Starjourn, Stole My Heart, Digital Winnifred).
+- [x] Supporting-work video thumbnails: all eleven videos now show their own picture (Dewey Water Works, Our Time, Recruitment, At the Doctor's, Yoga Legends, Windsage, Windsor Tunnel, Finding Joy, Starjourn, Stole My Heart, Digital Winnifred).
 
 ## Open
 - [x] Verify flickering jet-engine flames on the approved softly shaded home spaceship.
