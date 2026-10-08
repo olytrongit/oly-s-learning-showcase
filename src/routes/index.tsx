@@ -99,7 +99,7 @@ function Index() {
       </section>
 
       <section className="evidence-section shell">
-        <div className="section-heading section-heading--row"><div><p className="eyebrow">Supporting evidence</p><h2>Production skill, always in service of learning.</h2><p>Selected work that proves a useful capability and dynamic range</p></div><Link to="/supporting-work" className="text-link">Watch the work <ArrowRight /></Link></div>
+        <div className="section-heading section-heading--row"><div><p className="eyebrow">Supporting evidence</p><h2>Production skill, always in service of learning.</h2><p>Selected work that proves range and practical capability.</p></div><Link to="/supporting-work" className="text-link">Watch the work <ArrowRight /></Link></div>
         <div className="evidence-list">{supportingWork.slice(0, 6).map((item) => <Link key={item.id} to="/supporting-work" hash={item.id} className="evidence-row"><span>{item.type}</span><h3>{item.title}</h3><p>{item.proof}</p></Link>)}</div>
       </section>
 
