@@ -45,16 +45,38 @@ function Index() {
           </div>
           <div className="hero-starship" aria-hidden="true">
             <span className="starship-orbit" />
-            <span className="shuttle">
-              <span className="shuttle-wing shuttle-wing--far" />
-              <span className="shuttle-engine shuttle-engine--far"><i className="shuttle-intake" /><i className="shuttle-flame" /></span>
-              <span className="shuttle-hull-edge" />
-              <span className="shuttle-body" />
-              <span className="shuttle-windows" />
-              <span className="shuttle-roof" />
-              <span className="shuttle-wing shuttle-wing--near" />
-              <span className="shuttle-engine shuttle-engine--near"><i className="shuttle-intake" /><i className="shuttle-flame" /></span>
-            </span>
+            <svg className="shuttle-svg" viewBox="80 200 900 620" focusable="false">
+              <defs>
+                <linearGradient id="shipHull" x1="0" y1="0" x2="0.3" y2="1"><stop offset="0" className="sg-hull-hi" /><stop offset="1" className="sg-hull-lo" /></linearGradient>
+                <linearGradient id="shipPod" x1="0" y1="0" x2="0" y2="1"><stop offset="0" className="sg-hull-hi" /><stop offset="0.6" className="sg-hull-mid" /><stop offset="1" className="sg-hull-lo" /></linearGradient>
+                <linearGradient id="shipGlass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" className="sg-glass" /><stop offset="0.55" className="sg-glass" /><stop offset="0.68" className="sg-glass-hi" /><stop offset="0.8" className="sg-glass" /></linearGradient>
+              </defs>
+              <g className="ship-line">
+                <path className="ship-wing" d="M265 430 L405 368 L450 372 L300 492 L270 470 Z" />
+                <g transform="translate(572 300) rotate(-22)">
+                  <path className="ship-flame" d="M120 -26 Q160 -44 168 -30 Q182 -48 205 -38 Q185 -20 210 -6 Q180 4 196 22 Q160 26 120 26 Z" />
+                  <rect x="-120" y="-50" width="240" height="100" rx="46" fill="url(#shipPod)" />
+                  <ellipse className="ship-dark" cx="-112" cy="4" rx="16" ry="38" />
+                </g>
+                <path className="ship-bevel" d="M108 688 L270 770 L560 660 L865 500 L866 524 L560 684 L270 794 Q180 790 112 714 Z" />
+                <path fill="url(#shipHull)" d="M108 688 L250 540 L370 440 L620 308 L725 330 L860 430 L865 500 L560 660 L270 770 Q190 760 108 688 Z" />
+                <path className="ship-shade" d="M250 600 L560 640 L865 480 L865 500 L560 660 L270 770 Q190 760 108 688 Z" />
+                <path className="ship-roof" d="M365 432 L620 308 L722 334 L578 452 L480 486 Q382 474 365 432 Z" />
+                <path fill="url(#shipGlass)" d="M246 546 L362 438 Q384 480 482 490 L578 456 L566 520 Q522 592 420 616 L292 588 Z" />
+                <path className="ship-wing" d="M536 640 L790 490 L862 552 L700 680 L540 662 Z" />
+                <path className="ship-wing-edge" d="M540 662 L700 680 L862 552 L862 566 L705 694 L538 676 Z" />
+                <g transform="translate(860 445) rotate(-22)">
+                  <path className="ship-flame ship-flame--b" d="M20 -22 Q60 -40 68 -26 Q82 -44 100 -34 Q86 -16 106 -4 Q78 6 92 22 Q56 24 20 22 Z" />
+                  <ellipse className="ship-dark" cx="14" cy="0" rx="12" ry="28" />
+                </g>
+                <g transform="translate(758 392) rotate(-22)">
+                  <path className="ship-flame ship-flame--c" d="M120 -26 Q160 -44 168 -30 Q182 -48 205 -38 Q185 -20 210 -6 Q180 4 196 22 Q160 26 120 26 Z" />
+                  <rect x="-120" y="-55" width="240" height="110" rx="50" fill="url(#shipPod)" />
+                  <ellipse className="ship-dark" cx="-110" cy="4" rx="20" ry="42" />
+                  <ellipse className="ship-dark" cx="120" cy="0" rx="8" ry="32" />
+                </g>
+              </g>
+            </svg>
           </div>
         </div>
       </section>
