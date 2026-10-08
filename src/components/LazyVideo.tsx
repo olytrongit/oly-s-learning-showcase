@@ -9,7 +9,7 @@ export function LazyVideo({ title, youtubeId, poster }: { title: string; youtube
   }
 
   return (
-    <button className="video-poster" type="button" onClick={() => setPlaying(true)} aria-label={`Play ${title}`}>
+    <button className="video-poster" type="button" onClick={() => setPlaying(true)} aria-label={`Play ${title} video`}>
       {poster ? <img src={poster} alt="" loading="lazy" /> : <span className="video-poster__fill" aria-hidden="true" />}
       <span><Play aria-hidden="true" /> Play video</span>
     </button>
