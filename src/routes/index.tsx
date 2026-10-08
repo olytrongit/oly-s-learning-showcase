@@ -32,7 +32,7 @@ function Index() {
         <div className="shell home-hero__inner">
           <p className="status-pill"><span /> Senior Instructional Designer · Calgary</p>
           <h1>Keep your knowledge.<br />Refresh your <em>delivery.</em></h1>
-          <p className="hero-lede">I design the learning, then build the experience myself using video, Storyline modules, Unity simulations and more.<br />One person, end to end.</p>
+          <p className="hero-lede">I design the learning, then build the experience myself using video, Storyline modules, Unity simulations, and more.<br />One person, end to end.</p>
           <div className="hero-actions">
             <Link to="/case-studies" className="button-primary">See the work <ArrowRight /></Link>
             <Link to="/contact" className="button-secondary"><Mail /> Contact Olivier</Link>
