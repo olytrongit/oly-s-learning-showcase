@@ -45,14 +45,18 @@ function Index() {
           </div>
           <div className="hero-starship" aria-hidden="true">
             <span className="starship-orbit" />
-            <span className="starship">
-              <span className="starship-saucer"><i /></span>
-              <span className="starship-neck" />
-              <span className="starship-hull"><i /></span>
-              <span className="starship-pylon starship-pylon--left" />
-              <span className="starship-pylon starship-pylon--right" />
-              <span className="starship-nacelle starship-nacelle--left"><i /></span>
-              <span className="starship-nacelle starship-nacelle--right"><i /></span>
+            <span className="shuttle">
+              <span className="shuttle-tank"><i /></span>
+              <span className="shuttle-booster shuttle-booster--front"><i /></span>
+              <span className="shuttle-booster shuttle-booster--rear"><i /></span>
+              <span className="shuttle-tail" />
+              <span className="shuttle-wing" />
+              <span className="shuttle-body">
+                <i className="shuttle-nose" />
+                <i className="shuttle-windows" />
+                <i className="shuttle-stripe" />
+              </span>
+              <span className="shuttle-flame" />
             </span>
           </div>
         </div>
