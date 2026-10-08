@@ -115,20 +115,25 @@ h1,h2,h3,p { overflow-wrap: break-word; }
 .hero-starship { position: absolute; right: -1%; bottom: -32px; width: clamp(210px, 29vw, 340px); aspect-ratio: 1; display: grid; place-items: center; animation: starship-drift 7s ease-in-out infinite; }
 .starship-orbit { position: absolute; inset: 2%; border: 1px dashed color-mix(in oklab, var(--ink) 28%, transparent); border-radius: 50%; animation: orbit 18s linear infinite; }
 .starship-orbit::after { content: ""; position: absolute; top: 8%; left: 13%; width: clamp(11px, 6%, 19px); aspect-ratio: 1; border-radius: 50%; background: var(--plum); box-shadow: -3px 3px 0 color-mix(in oklab, var(--plum) 55%, black); }
-.shuttle { position: relative; z-index: 2; width: 84%; height: 54%; transform: rotate(-9deg); filter: drop-shadow(0 12px 10px color-mix(in oklab, var(--ink) 18%, transparent)); }
-.shuttle-tank { position: absolute; z-index: 1; left: 39%; top: 0; width: 15%; height: 76%; border-radius: 999px; background: linear-gradient(90deg, color-mix(in oklab, var(--coral) 55%, var(--paper)), var(--coral) 70%); }
-.shuttle-tank i { position: absolute; top: 5%; left: 22%; width: 56%; height: 9%; border-radius: 999px; background: color-mix(in oklab, var(--ink) 55%, var(--coral)); }
-.shuttle-booster { position: absolute; z-index: 1; top: 12%; width: 8.5%; height: 60%; border-radius: 999px; background: linear-gradient(90deg, var(--paper), color-mix(in oklab, var(--sky) 32%, var(--paper)) 70%); }
-.shuttle-booster--front { left: 30.5%; }
-.shuttle-booster--rear { left: 54.5%; }
-.shuttle-booster i { position: absolute; top: 0; left: 0; width: 100%; height: 13%; border-radius: 999px; background: var(--coral); }
-.shuttle-body { position: absolute; z-index: 3; left: 3%; top: 36%; width: 80%; height: 30%; border-radius: 999px 22% 20% 999px; background: linear-gradient(180deg, var(--paper), color-mix(in oklab, var(--sky) 26%, var(--paper)) 78%); box-shadow: inset 0 -5px 7px color-mix(in oklab, var(--sky) 42%, var(--paper)); }
-.shuttle-nose { position: absolute; left: 0; top: 0; width: 13%; height: 100%; border-radius: 999px 0 0 999px; background: linear-gradient(180deg, color-mix(in oklab, var(--ink) 78%, var(--sky)), color-mix(in oklab, var(--sky) 55%, var(--ink))); }
-.shuttle-windows { position: absolute; left: 17%; top: 26%; width: 13%; height: 26%; border-radius: 4px; background: linear-gradient(180deg, color-mix(in oklab, var(--sky) 60%, var(--ink)), color-mix(in oklab, var(--ink) 70%, var(--sky))); transform: skewX(-14deg); }
-.shuttle-stripe { position: absolute; left: 36%; right: 8%; top: 62%; height: 9%; border-radius: 999px; background: linear-gradient(90deg, var(--coral), color-mix(in oklab, var(--coral) 55%, var(--paper))); }
-.shuttle-tail { position: absolute; z-index: 2; left: 60%; top: 4%; width: 11%; height: 34%; background: linear-gradient(160deg, var(--sky), color-mix(in oklab, var(--sky) 45%, var(--paper))); clip-path: polygon(62% 0, 100% 100%, 12% 100%, 12% 26%); }
-.shuttle-wing { position: absolute; z-index: 2; left: 34%; top: 62%; width: 44%; height: 30%; background: linear-gradient(150deg, color-mix(in oklab, var(--sky) 60%, var(--paper)), var(--sky)); clip-path: polygon(0 0, 100% 100%, 8% 100%, 0 40%); }
-.shuttle-flame { position: absolute; z-index: 1; left: 84%; top: 44%; width: 20%; height: 13%; border-radius: 999px 30% 30% 999px; background: linear-gradient(90deg, var(--sun), var(--coral) 55%, transparent); filter: blur(2px); opacity: .9; animation: shuttle-flicker 1.2s ease-in-out infinite; }
+/* Soft-shaded spacecraft: all paint roles stay in the global design system. */
+.shuttle { --ship-hull: var(--paper); --ship-edge: color-mix(in oklab, var(--paper) 74%, var(--ink)); --ship-wing: color-mix(in oklab, var(--sky) 43%, var(--leaf) 57%); --ship-wing-light: color-mix(in oklab, var(--ship-wing) 65%, var(--paper)); --ship-glass: color-mix(in oklab, var(--ink) 80%, var(--sky)); --ship-glass-light: color-mix(in oklab, var(--ship-glass) 75%, var(--paper)); --ship-thrust: linear-gradient(90deg, var(--coral), color-mix(in oklab, var(--coral) 40%, var(--paper))); --ship-shadow: color-mix(in oklab, var(--ink) 18%, transparent); position: relative; z-index: 2; width: 90%; height: 62%; transform: rotate(-35deg) skewX(-8deg); filter: drop-shadow(0 10px 8px var(--ship-shadow)); }
+.shuttle-wing { position: absolute; width: 48%; height: 38%; left: 38%; background: linear-gradient(155deg, var(--ship-wing-light), var(--ship-wing)); border-radius: 8px; box-shadow: inset 0 -4px 0 var(--ship-wing); }
+.shuttle-wing--far { z-index: 1; top: 3%; clip-path: polygon(0 100%, 23% 3%, 94% 0, 100% 100%); }
+.shuttle-wing--near { z-index: 5; top: 64%; clip-path: polygon(0 0, 100% 0, 92% 96%, 14% 100%); }
+.shuttle-hull-edge,.shuttle-body { position: absolute; left: 1%; top: 28%; width: 87%; height: 57%; clip-path: polygon(0 28%, 7% 14%, 61% 0, 93% 12%, 100% 76%, 14% 100%, 1% 89%); border-radius: 14px; }
+.shuttle-hull-edge { z-index: 2; top: 32%; background: linear-gradient(150deg, var(--ship-hull), var(--ship-edge)); }
+.shuttle-body { z-index: 3; background: linear-gradient(165deg, var(--ship-hull) 35%, color-mix(in oklab, var(--ship-hull) 85%, var(--sun)) 65%, var(--ship-edge)); }
+.shuttle-windows { position: absolute; z-index: 4; left: 19%; top: 38%; width: 37%; height: 35%; clip-path: polygon(9% 8%, 94% 0, 100% 77%, 12% 100%, 0 79%); border-radius: 18% 24% 30% 24%; background: linear-gradient(155deg, var(--ship-glass) 35%, var(--ship-glass-light) 48%, var(--ship-glass) 62%); box-shadow: inset 0 -3px 0 var(--ship-edge); }
+.shuttle-roof { position: absolute; z-index: 5; left: 42%; top: 27%; width: 39%; height: 22%; border-radius: 7px 16px 9px 12px; background: linear-gradient(160deg, var(--ship-hull) 65%, var(--ship-edge)); transform: skewY(-5deg); box-shadow: 0 3px 0 var(--ship-edge); }
+.shuttle-engine { position: absolute; width: 37%; height: 27%; border-radius: 25% 38% 38% 25%; background: linear-gradient(180deg, var(--ship-hull) 8%, color-mix(in oklab, var(--ship-hull) 91%, var(--sun)) 35%, var(--ship-edge)); box-shadow: inset 0 2px 0 var(--ship-hull), inset 0 -3px 0 var(--ship-edge); }
+.shuttle-engine--far { z-index: 2; left: 48%; top: 6%; }
+.shuttle-engine--near { z-index: 6; left: 62%; top: 56%; }
+.shuttle-intake { position: absolute; left: 2%; top: 16%; width: 13%; height: 71%; border-radius: 50%; border: 3px solid var(--ship-edge); background: var(--ship-glass-light); }
+.shuttle-engine::after { content: ''; position: absolute; right: 1%; top: 12%; height: 76%; width: 8%; border-radius: 50%; background: var(--ship-glass-light); }
+.shuttle-flame { position: absolute; z-index: -1; left: 95%; top: 27%; width: 33%; height: 47%; clip-path: polygon(0 20%, 35% 0, 30% 21%, 100% 10%, 67% 70%, 22% 100%, 0 80%); background: var(--ship-thrust); opacity: .85; transform-origin: left center; animation: shuttle-flicker 1.2s ease-in-out infinite; }
+.shuttle-engine--near .shuttle-flame { animation-duration: .85s; animation-delay: -.3s; }
+@media (max-width: 800px) { .home-hero .hero-starship { position: relative; right: auto; bottom: auto; width: 180px; height: 180px; margin: 1rem 0 -2rem auto; opacity: 1; } }
+
 
 .approach-section,.evidence-section,.career-section,.supporting-section,.credentials-section,.confirm-section { padding-block: clamp(4rem, 8vw, 7rem); }
 .section-heading h2 { margin: 0; font-size: clamp(2rem, 4.5vw, 3.7rem); line-height: 1.08; }
