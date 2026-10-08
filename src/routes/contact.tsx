@@ -57,7 +57,7 @@ function ContactPage() {
             <div className="contact-success" role="status">
               <CheckCircle2 aria-hidden="true" />
               <h2>Message sent.</h2>
-              <p>Thanks for reaching out — I read every message personally and will reply to {email} as soon as I can.</p>
+              <p>Thanks for reaching out. I read every message personally and will reply to {email} as soon as I can.</p>
               <a className="text-link" href={site.linkedin} target="_blank" rel="noreferrer">Connect on LinkedIn <ArrowRight /></a>
             </div>
           ) : (
@@ -88,10 +88,10 @@ function ContactPage() {
 
           <aside className="contact-aside">
             <h2>Prefer LinkedIn?</h2>
-            <p>That works too — I check it daily.</p>
+            <p>That works too. I check it daily.</p>
             <a className="text-link" href={site.linkedin} target="_blank" rel="noreferrer">linkedin.com/in/olytron <ArrowRight /></a>
             <h2>What happens next</h2>
-            <p>Your message lands in my private inbox — my email address is never shown on this site, so it stays out of spam lists.</p>
+            <p>Your message lands in my private inbox. My email address is never shown on this site, so it stays out of spam lists.</p>
           </aside>
         </div>
       </section>
