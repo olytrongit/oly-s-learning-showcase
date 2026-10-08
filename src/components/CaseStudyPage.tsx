@@ -32,7 +32,7 @@ export function CaseStudyPage({ study }: { study: CaseStudy }) {
 
       <section className="decision-band">
         <div className="shell decision-grid">
-          <div><p className="eyebrow">The design response</p><h2>Decisions before deliverables.</h2><p>Format followed the learning need—not the other way around.</p></div>
+          <div><p className="eyebrow">The design response</p><h2>Decisions before deliverables.</h2><p>Format followed the learning need, not the other way around.</p></div>
           <ol>{study.decisions.map((decision, i) => <li key={decision}><span>{String(i + 1).padStart(2, "0")}</span>{decision}</li>)}</ol>
         </div>
       </section>
