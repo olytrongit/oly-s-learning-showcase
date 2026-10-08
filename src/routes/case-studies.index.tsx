@@ -5,9 +5,9 @@ import { caseStudies } from "@/content/case-studies";
 export const Route = createFileRoute("/case-studies/")({
   head: () => ({
     meta: [
-      { title: "Instructional Design Case Studies — Oly Balmokune" },
+      { title: "Instructional Design Case Studies — Olivier Balmokune" },
       { name: "description", content: "Five senior instructional design case studies spanning micro-learning, immersive safety, AI-assisted video, curriculum, and Storyline." },
-      { property: "og:title", content: "Instructional Design Case Studies — Oly Balmokune" },
+      { property: "og:title", content: "Instructional Design Case Studies — Olivier Balmokune" },
       { property: "og:description", content: "Compare five learning problems, design decisions, builds, and outcomes." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

@@ -16,9 +16,9 @@ export function SiteHeader() {
   return (
     <header className="site-header">
       <div className="site-header__inner">
-        <Link to="/" className="brand" aria-label="Oly Balmokune, home">
+        <Link to="/" className="brand" aria-label="Olivier Balmokune, home">
           <span className="rocket-mark" aria-hidden="true" />
-          <span>Oly<span className="text-coral">.</span></span>
+          <span>Olivier<span className="text-coral">.</span></span>
         </Link>
         <nav className="desktop-nav" aria-label="Primary navigation">
           {nav.map((item) => <Link key={item.to} to={item.to} activeProps={{ className: "is-active" }}>{item.label}</Link>)}

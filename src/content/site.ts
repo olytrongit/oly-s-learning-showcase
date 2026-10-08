@@ -11,7 +11,7 @@ import winniePoster from "@/assets/winnie.png.asset.json";
 import yogaPoster from "@/assets/yoga_5.jpg.asset.json";
 
 export const site = {
-  name: "Oly Balmokune",
+  name: "Olivier Balmokune",
   role: "Senior Instructional Designer",
   location: "Calgary, Alberta",
   tagline: "Keep your knowledge. Refresh your delivery.",
