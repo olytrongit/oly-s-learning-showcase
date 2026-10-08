@@ -8,9 +8,9 @@ import { site } from "@/content/site";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Oly Balmokune" },
-      { name: "description", content: "Get in touch with Oly Balmokune, senior instructional designer in Calgary, about senior instructional design roles." },
-      { property: "og:title", content: "Contact — Oly Balmokune" },
+      { title: "Contact — Olivier Balmokune" },
+      { name: "description", content: "Get in touch with Olivier Balmokune, senior instructional designer in Calgary, about senior instructional design roles." },
+      { property: "og:title", content: "Contact — Olivier Balmokune" },
       { property: "og:description", content: "Get in touch about senior instructional design roles." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

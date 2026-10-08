@@ -8,9 +8,9 @@ import { site, supportingWork } from "@/content/site";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Oly Balmokune — Senior Instructional Designer" },
+      { title: "Olivier Balmokune — Senior Instructional Designer" },
       { name: "description", content: "Senior instructional designer who turns complex information into clear learning experiences—and builds the videos, interactives, and simulations himself." },
-      { property: "og:title", content: "Oly Balmokune — Senior Instructional Designer" },
+      { property: "og:title", content: "Olivier Balmokune — Senior Instructional Designer" },
       { property: "og:description", content: "Learning design, built end to end: video, Storyline, curriculum, and XR." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -35,7 +35,7 @@ function Index() {
           <p className="hero-lede">I design the learning, then build the experience myself using video, Storyline modules, Unity simulations and more.<br />One person, end to end.</p>
           <div className="hero-actions">
             <Link to="/case-studies" className="button-primary">See the work <ArrowRight /></Link>
-            <Link to="/contact" className="button-secondary"><Mail /> Contact Oly</Link>
+            <Link to="/contact" className="button-secondary"><Mail /> Contact Olivier</Link>
           </div>
           <div className="proof-strip" aria-label="Portfolio highlights">
             <div><strong>15+</strong><span>years in multimedia and XR</span></div>

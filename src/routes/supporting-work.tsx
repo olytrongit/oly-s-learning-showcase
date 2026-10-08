@@ -6,9 +6,9 @@ import { supportingWork } from "@/content/site";
 export const Route = createFileRoute("/supporting-work")({
   head: () => ({
     meta: [
-      { title: "Supporting work — Oly Balmokune" },
-      { name: "description", content: "Video, motion, mixed reality, and AI experiments by Oly Balmokune, each with the learning capability it demonstrates." },
-      { property: "og:title", content: "Supporting work — Oly Balmokune" },
+      { title: "Supporting work — Olivier Balmokune" },
+      { name: "description", content: "Video, motion, mixed reality, and AI experiments by Olivier Balmokune, each with the learning capability it demonstrates." },
+      { property: "og:title", content: "Supporting work — Olivier Balmokune" },
       { property: "og:description", content: "Video, motion, mixed reality, and AI experiments, each with the learning capability it demonstrates." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -50,7 +50,7 @@ function SupportingWorkPage() {
           <div><p className="eyebrow">Senior learning design, built end to end</p><h2>See the design thinking behind it.</h2></div>
           <div>
             <Link className="button-primary" to="/case-studies">Read the case studies<ArrowRight /></Link>
-            <Link className="text-link" to="/contact">Contact Oly <ArrowRight /></Link>
+            <Link className="text-link" to="/contact">Contact Olivier <ArrowRight /></Link>
           </div>
         </div>
       </section>

@@ -1,4 +1,4 @@
-# Oly Balmokune — Senior Instructional Designer
+# Olivier Balmokune — Senior Instructional Designer
 
 A static portfolio built with React, TanStack Start, Vite, and Tailwind CSS.
 
