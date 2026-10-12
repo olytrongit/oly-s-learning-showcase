@@ -1,8 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useServerFn } from "@tanstack/react-start";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { useState } from "react";
-import { submitContact } from "@/lib/contact.functions";
 import { site } from "@/content/site";
 
 export const Route = createFileRoute("/contact")({
@@ -20,24 +18,35 @@ export const Route = createFileRoute("/contact")({
 });
 
 function ContactPage() {
-  const send = useServerFn(submitContact);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [company, setCompany] = useState(""); // honeypot
+  const [botcheck, setBotcheck] = useState(""); // honeypot
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
-  const [errorText, setErrorText] = useState("");
 
   async function onSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setStatus("sending");
-    setErrorText("");
     try {
-      await send({ data: { name, email, message, company } });
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          access_key: "62da6292-9887-456f-8120-72683bc342c3",
+          name,
+          email,
+          message,
+          subject: "New message from olytron.com",
+          from_name: "Olivier Balmokune Portfolio",
+          replyto: email,
+          botcheck,
+        }),
+      });
+      const result = await response.json();
+      if (!response.ok || !result.success) throw new Error("send failed");
       setStatus("sent");
-    } catch (error) {
+    } catch {
       setStatus("error");
-      setErrorText(error instanceof Error ? error.message : "Something went wrong. Please try again.");
     }
   }
 
@@ -76,10 +85,15 @@ function ContactPage() {
               </div>
               {/* Honeypot: hidden from humans, attractive to bots. */}
               <div className="hp-field" aria-hidden="true">
-                <label htmlFor="contact-company">Company</label>
-                <input id="contact-company" name="company" type="text" tabIndex={-1} autoComplete="off" value={company} onChange={(e) => setCompany(e.target.value)} />
+                <label htmlFor="contact-botcheck">Company</label>
+                <input id="contact-botcheck" name="botcheck" type="text" tabIndex={-1} autoComplete="off" value={botcheck} onChange={(e) => setBotcheck(e.target.value)} />
               </div>
-              {status === "error" && <p className="form-error" role="alert">{errorText}</p>}
+              {status === "error" && (
+                <p className="form-error" role="alert">
+                  Your message could not be sent. Please try again, or reach me on{" "}
+                  <a href={site.linkedin} target="_blank" rel="noreferrer">LinkedIn</a> instead.
+                </p>
+              )}
               <button type="submit" className="button-primary" disabled={status === "sending"}>
                 {status === "sending" ? "Sending…" : "Send message"} <ArrowRight />
               </button>
