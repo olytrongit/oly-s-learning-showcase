@@ -1,14 +1,14 @@
-import waterworksHero from "@/assets/waterworks_kids.jpg.asset.json";
-import xrSafetyHero from "@/assets/XR_Safety_2.jpg.asset.json";
-import wellnessHero from "@/assets/lifespeak_2.jpg.asset.json";
-import curriculumHero from "@/assets/immersive_1.jpg.asset.json";
-import storylineHero from "@/assets/storyline_3.png.asset.json";
-import settlingDiagram from "@/assets/settling_1.jpg.asset.json";
-import xrPersona from "@/assets/persona_Ben_West.png.asset.json";
-import wellnessStill from "@/assets/lifespeak_1.jpeg.asset.json";
-import curriculumBuild from "@/assets/immersive_2.jpg.asset.json";
-import storylineBuild from "@/assets/storyline_2.png.asset.json";
-import wellnessDogPoster from "@/assets/dog_licking_face_16_9.jpg.asset.json";
+const waterworksHero = { url: "/images/waterworks_kids.jpg" };
+const xrSafetyHero = { url: "/images/XR_Safety_2.jpg" };
+const wellnessHero = { url: "/images/lifespeak_2.jpg" };
+const curriculumHero = { url: "/images/immersive_1.jpg" };
+const storylineHero = { url: "/images/storyline_3.png" };
+const settlingDiagram = { url: "/images/settling_1.jpg" };
+const xrPersona = { url: "/images/persona_Ben_West.png" };
+const wellnessStill = { url: "/images/lifespeak_1.jpeg" };
+const curriculumBuild = { url: "/images/immersive_2.jpg" };
+const storylineBuild = { url: "/images/storyline_2.png" };
+const wellnessDogPoster = { url: "/images/dog_licking_face_16_9.jpg" };
 
 export type CaseStudy = {
   slug: string;

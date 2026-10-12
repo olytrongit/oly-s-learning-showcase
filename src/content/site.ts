@@ -1,14 +1,14 @@
-import doctorPoster from "@/assets/doctor.jpg.asset.json";
-import deweyPoster from "@/assets/dewey.jpg.asset.json";
-import heartPoster from "@/assets/heart_stole.jpg.asset.json";
-import joyPoster from "@/assets/joy.jpg.asset.json";
-import ourTimePoster from "@/assets/ourtime.jpg.asset.json";
-import recruitmentPoster from "@/assets/recruitment.jpg.asset.json";
-import starjournPoster from "@/assets/starjourn.jpg.asset.json";
-import tunnelPoster from "@/assets/tunnel.png.asset.json";
-import windsagePoster from "@/assets/windsage_2.jpg.asset.json";
-import winniePoster from "@/assets/winnie.png.asset.json";
-import yogaPoster from "@/assets/yoga_5.jpg.asset.json";
+const doctorPoster = { url: "/images/doctor.jpg" };
+const deweyPoster = { url: "/images/dewey.jpg" };
+const heartPoster = { url: "/images/heart_stole.jpg" };
+const joyPoster = { url: "/images/joy.jpg" };
+const ourTimePoster = { url: "/images/ourtime.jpg" };
+const recruitmentPoster = { url: "/images/recruitment.jpg" };
+const starjournPoster = { url: "/images/starjourn.jpg" };
+const tunnelPoster = { url: "/images/tunnel.png" };
+const windsagePoster = { url: "/images/windsage_2.jpg" };
+const winniePoster = { url: "/images/winnie.png" };
+const yogaPoster = { url: "/images/yoga_5.jpg" };
 
 export const site = {
   name: "Olivier Balmokune",

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>/</loc></url>
-  <url><loc>/case-studies</loc></url>
-  <url><loc>/case-studies/water-works-for-kids</loc></url>
-  <url><loc>/case-studies/xr-safety-simulation</loc></url>
-  <url><loc>/case-studies/wellness-micro-learning</loc></url>
-  <url><loc>/case-studies/immersive-storytelling-curriculum</loc></url>
-  <url><loc>/case-studies/storyline-360-interactives</loc></url>
-  <url><loc>/supporting-work</loc></url>
-  <url><loc>/about</loc></url>
-  <url><loc>/contact</loc></url>
+  <url><loc>https://olytron.com/</loc></url>
+  <url><loc>https://olytron.com/case-studies</loc></url>
+  <url><loc>https://olytron.com/case-studies/water-works-for-kids</loc></url>
+  <url><loc>https://olytron.com/case-studies/xr-safety-simulation</loc></url>
+  <url><loc>https://olytron.com/case-studies/wellness-micro-learning</loc></url>
+  <url><loc>https://olytron.com/case-studies/immersive-storytelling-curriculum</loc></url>
+  <url><loc>https://olytron.com/case-studies/storyline-360-interactives</loc></url>
+  <url><loc>https://olytron.com/supporting-work</loc></url>
+  <url><loc>https://olytron.com/about</loc></url>
+  <url><loc>https://olytron.com/contact</loc></url>
 </urlset>
