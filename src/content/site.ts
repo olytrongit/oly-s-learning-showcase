@@ -15,7 +15,6 @@ export const site = {
   role: "Senior Instructional Designer",
   location: "Calgary, Alberta",
   tagline: "Keep your knowledge. Refresh your delivery.",
-  email: "tobalmokune@olytron.com",
   linkedin: "https://www.linkedin.com/in/olytron/",
   resume: "/Olivier-Balmokune-Resume.pdf",
   availability: "Open to remote roles or opportunities in Calgary, with relocation also considered.",
