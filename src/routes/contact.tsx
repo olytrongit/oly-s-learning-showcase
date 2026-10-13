@@ -6,9 +6,9 @@ import { site } from "@/content/site";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Olivier Balmokune" },
-      { name: "description", content: "Get in touch with Olivier Balmokune, senior instructional designer in Calgary, about senior instructional design roles." },
-      { property: "og:title", content: "Contact — Olivier Balmokune" },
+      { title: "Contact" },
+      { name: "description", content: "Get in touch with Olivier, senior instructional designer in Calgary, about senior instructional design roles." },
+      { property: "og:title", content: "Contact" },
       { property: "og:description", content: "Get in touch about senior instructional design roles." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -37,7 +37,7 @@ function ContactPage() {
           email,
           message,
           subject: "New message from olytron.com",
-          from_name: "Olivier Balmokune Portfolio",
+          from_name: "Olivier Portfolio",
           replyto: email,
           botcheck,
         }),

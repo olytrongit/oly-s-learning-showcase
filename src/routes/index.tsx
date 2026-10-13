@@ -8,9 +8,9 @@ import { site, supportingWork } from "@/content/site";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Olivier Balmokune — Senior Instructional Designer" },
+      { title: "Senior Instructional Designer" },
       { name: "description", content: "Senior instructional designer who turns complex information into clear learning experiences and builds the videos, interactives, and simulations himself." },
-      { property: "og:title", content: "Olivier Balmokune — Senior Instructional Designer" },
+      { property: "og:title", content: "Senior Instructional Designer" },
       { property: "og:description", content: "Learning design, built end to end: video, Storyline, curriculum, and XR." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

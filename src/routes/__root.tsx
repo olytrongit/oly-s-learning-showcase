@@ -81,7 +81,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "author", content: "Olivier Balmokune" },
+      { name: "author", content: "Olivier" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
