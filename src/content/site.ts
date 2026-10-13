@@ -11,7 +11,7 @@ const winniePoster = { url: "/images/winnie.png" };
 const yogaPoster = { url: "/images/yoga_5.jpg" };
 
 export const site = {
-  name: "Olivier Balmokune",
+  name: "Olivier",
   role: "Senior Instructional Designer",
   location: "Calgary, Alberta",
   tagline: "Keep your knowledge. Refresh your delivery.",

@@ -16,7 +16,7 @@ export function SiteHeader() {
   return (
     <header className="site-header">
       <div className="site-header__inner">
-        <Link to="/" className="brand" aria-label="Olivier Balmokune, home">
+        <Link to="/" className="brand" aria-label="Olivier, home">
           <span className="rocket-mark" aria-hidden="true" />
           <span>Olivier<span className="text-coral">.</span></span>
         </Link>
