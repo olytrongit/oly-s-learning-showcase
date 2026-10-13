@@ -4,8 +4,7 @@
     <linearGradient id="p" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fffcf6"/><stop offset="0.6" stop-color="#fef5e1"/><stop offset="1" stop-color="#d5d2cc"/></linearGradient>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#142228"/><stop offset="0.55" stop-color="#142228"/><stop offset="0.68" stop-color="#666e70"/><stop offset="0.8" stop-color="#142228"/></linearGradient>
   </defs>
-  <rect width="1000" height="1000" rx="220" fill="#18100a"/>
-  <g transform="translate(500 500) scale(1) translate(-560 -530)" stroke="#bebab4" stroke-width="10" stroke-linejoin="round">
+  <g transform="translate(500 500) scale(1.12) translate(-534 -505)" stroke="#6b655e" stroke-width="16" stroke-linejoin="round">
     <path fill="#269a85" d="M265 430 L405 368 L450 372 L300 492 L270 470 Z"/>
     <g transform="translate(572 300) rotate(-22)">
       <path fill="#fa5d36" stroke="none" d="M120 -26 Q160 -44 168 -30 Q182 -48 205 -38 Q185 -20 210 -6 Q180 4 196 22 Q160 26 120 26 Z"/>

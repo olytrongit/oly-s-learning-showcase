@@ -64,8 +64,13 @@ jobs:
           T=$(mktemp -d)
           for s in 16 32 48; do rsvg-convert -w $s -h $s public/favicon.svg -o "$T/$s.png"; done
           convert "$T/16.png" "$T/32.png" "$T/48.png" "$DIR/favicon.ico"
-          # iOS rounds the corners itself, so the touch icon uses a square tile.
-          sed 's/rx="220"/rx="0"/' public/favicon.svg > "$T/square.svg"
+          # favicon.svg is transparent; the home-screen icon gets a dark square tile
+          # (iOS rounds the corners itself) with a smaller ship and lighter outline.
+          sed -e 's#</defs>#</defs><rect width="1000" height="1000" fill="\#18100a"/>#' \
+              -e 's/scale(1.12) translate(-534 -505)/scale(0.9) translate(-534 -505)/' \
+              -e 's/stroke="\#6b655e" stroke-width="16"/stroke="\#bebab4" stroke-width="10"/' \
+              public/favicon.svg > "$T/square.svg"
+          grep -q 'fill="#18100a"' "$T/square.svg" || { echo "::error::tile not added"; exit 1; }
           rsvg-convert -w 180 -h 180 "$T/square.svg" -o "$DIR/apple-touch-icon.png"
           echo "::notice title=Favicons::$(identify "$DIR/favicon.ico" "$DIR/apple-touch-icon.png" | awk '{print $1, $3}' | tr '\n' ';')"
 
