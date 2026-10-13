@@ -6,9 +6,9 @@ import { supportingWork } from "@/content/site";
 export const Route = createFileRoute("/supporting-work")({
   head: () => ({
     meta: [
-      { title: "Supporting work — Olivier Balmokune" },
-      { name: "description", content: "Video, motion, mixed reality, and AI experiments by Olivier Balmokune, each with the learning capability it demonstrates." },
-      { property: "og:title", content: "Supporting work — Olivier Balmokune" },
+      { title: "Supporting Work" },
+      { name: "description", content: "Video, motion, mixed reality, and AI experiments by Olivier, each with the learning capability it demonstrates." },
+      { property: "og:title", content: "Supporting Work" },
       { property: "og:description", content: "Video, motion, mixed reality, and AI experiments, each with the learning capability it demonstrates." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

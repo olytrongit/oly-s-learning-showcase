@@ -5,9 +5,9 @@ import { site, skillGroups, supportingWork } from "@/content/site";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Olivier Balmokune — Senior Instructional Designer" },
-      { name: "description", content: "Olivier Balmokune combines senior instructional design with 15+ years of motion, multimedia, and XR production experience." },
-      { property: "og:title", content: "About Olivier Balmokune — Senior Instructional Designer" },
+      { title: "About" },
+      { name: "description", content: "Olivier combines senior instructional design with 15+ years of motion, multimedia, and XR production experience." },
+      { property: "og:title", content: "About" },
       { property: "og:description", content: "The instructional designer who can carry the learning through production." },
       { property: "og:type", content: "profile" },
       { name: "twitter:card", content: "summary_large_image" },
