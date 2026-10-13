@@ -57,6 +57,18 @@ jobs:
           echo "::notice title=Static output in ${DIR}::${tree}"
           echo "dir=$DIR" >> "$GITHUB_OUTPUT"
 
+      - name: Render favicon.ico and apple-touch-icon.png from favicon.svg
+        run: |
+          DIR="${{ steps.out.outputs.dir }}"
+          sudo apt-get install -y -qq librsvg2-bin imagemagick > /dev/null
+          T=$(mktemp -d)
+          for s in 16 32 48; do rsvg-convert -w $s -h $s public/favicon.svg -o "$T/$s.png"; done
+          convert "$T/16.png" "$T/32.png" "$T/48.png" "$DIR/favicon.ico"
+          # iOS rounds the corners itself, so the touch icon uses a square tile.
+          sed 's/rx="220"/rx="0"/' public/favicon.svg > "$T/square.svg"
+          rsvg-convert -w 180 -h 180 "$T/square.svg" -o "$DIR/apple-touch-icon.png"
+          echo "::notice title=Favicons::$(identify "$DIR/favicon.ico" "$DIR/apple-touch-icon.png" | awk '{print $1, $3}' | tr '\n' ';')"
+
       - name: Check every page and image is present
         run: |
           DIR="${{ steps.out.outputs.dir }}"
@@ -72,7 +84,7 @@ jobs:
           for img in $(grep -rhoE '/images/[A-Za-z0-9_.-]+' src | sort -u); do
             if [ -f "$DIR$img" ]; then echo "ok   $img"; else echo "::error::MISSING $img"; fail=1; fi
           done
-          [ -f "$DIR/CNAME" ] || { echo "::error::MISSING CNAME"; fail=1; }
+          for f in CNAME favicon.svg favicon.ico apple-touch-icon.png; do [ -f "$DIR/$f" ] || { echo "::error::MISSING $f"; fail=1; }; done
           exit $fail
 
       - uses: actions/upload-pages-artifact@v3
