@@ -16,6 +16,7 @@
 - [x] Supporting-work video thumbnails: all eleven videos now show their own picture (Dewey Water Works, Our Time, Recruitment, At the Doctor's, Yoga Legends, Windsage, Windsor Tunnel, Finding Joy, Starjourn, Stole My Heart, Digital Winnifred).
 
 ## Open
-- [x] Verify flickering jet-engine flames on the approved softly shaded home spaceship.
-- [x] Contact form page with honeypot — live at /contact, tested end to end
 - [ ] Email delivery of submissions to olytron address — blocked: needs paid plan + verified olytron.com domain (setup offered to user)
+- [ ] Favicon — waiting on user's choice: upload their own icon, or have one designed from the shuttle or ringed-planet mark
+- [ ] Rename the résumé file Olivier-Balmokune-Resume.pdf — waiting on the user's updated résumé
+- [ ] Replace the four demo thumbnails with the user's own images (same filenames, 940×528)
