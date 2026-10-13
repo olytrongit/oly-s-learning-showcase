@@ -23,6 +23,8 @@ export default defineConfig({
       { path: "/about" },
       { path: "/contact" },
     ],
-    prerender: { enabled: true, autoStaticPathsDiscovery: false },
+    // Pages are listed explicitly above, so don't crawl links. Crawling follows the
+    // Storyline demo links (/demos/*/story.html), which the prerenderer can't fetch.
+    prerender: { enabled: true, autoStaticPathsDiscovery: false, crawlLinks: false },
   },
 });
