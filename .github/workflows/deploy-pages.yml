@@ -34,7 +34,16 @@ jobs:
           npm install --no-audit --no-fund --registry=https://registry.npmjs.org
 
       - name: Build static site
-        run: npm run build
+        run: |
+          set +e
+          npm run build > build.log 2>&1
+          status=$?
+          cat build.log
+          if [ $status -ne 0 ]; then
+            msg=$(grep -v '^\s*$' build.log | tail -60 | sed 's/%/%25/g' | awk '{printf "%s%%0A", $0}')
+            echo "::error title=Build failed::${msg}"
+          fi
+          exit $status
 
       - name: Locate static output
         id: out
@@ -44,6 +53,8 @@ jobs:
             | awk '{ print length, $0 }' | sort -n | head -1 | cut -d' ' -f2-)")
           echo "Static output: $DIR"
           ls -la "$DIR"
+          tree=$(cd "$DIR" && find . -name '*.html' | sort | head -40 | awk '{printf "%s%%0A", $0}')
+          echo "::notice title=Static output in ${DIR}::${tree}"
           echo "dir=$DIR" >> "$GITHUB_OUTPUT"
 
       - name: Check every page and image is present
@@ -56,12 +67,12 @@ jobs:
                    case-studies/wellness-micro-learning case-studies/immersive-storytelling-curriculum \
                    case-studies/storyline-360-interactives; do
             if [ -f "$DIR/$p/index.html" ] || [ -f "$DIR/$p.html" ]; then echo "ok   page /$p"
-            else echo "MISSING page /$p"; fail=1; fi
+            else echo "::error::MISSING page /$p"; fail=1; fi
           done
           for img in $(grep -rhoE '/images/[A-Za-z0-9_.-]+' src | sort -u); do
-            if [ -f "$DIR$img" ]; then echo "ok   $img"; else echo "MISSING $img"; fail=1; fi
+            if [ -f "$DIR$img" ]; then echo "ok   $img"; else echo "::error::MISSING $img"; fail=1; fi
           done
-          [ -f "$DIR/CNAME" ] || { echo "MISSING CNAME"; fail=1; }
+          [ -f "$DIR/CNAME" ] || { echo "::error::MISSING CNAME"; fail=1; }
           exit $fail
 
       - uses: actions/upload-pages-artifact@v3
