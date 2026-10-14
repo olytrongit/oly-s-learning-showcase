@@ -236,3 +236,6 @@ h1,h2,h3,p { overflow-wrap: break-word; }
 .next-study a svg { transition: transform .2s ease; }
 .next-study a:hover svg { transform: translateX(4px); }
 .next-study a:focus-visible { outline: 3px solid var(--coral); outline-offset: 4px; border-radius: 4px; }
+
+/* Whole case-study card is clickable: the "Read case study" link stretches over the card */
+.case-card .text-link::after { content: ""; position: absolute; inset: 0; z-index: 3; }
