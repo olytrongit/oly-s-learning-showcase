@@ -16,7 +16,9 @@
 - [x] Supporting-work video thumbnails: all eleven videos now show their own picture (Dewey Water Works, Our Time, Recruitment, At the Doctor's, Yoga Legends, Windsage, Windsor Tunnel, Finding Joy, Starjourn, Stole My Heart, Digital Winnifred).
 
 ## Open
-- [ ] Email delivery of submissions to olytron address — blocked: needs paid plan + verified olytron.com domain (setup offered to user)
-- [ ] Favicon — waiting on user's choice: upload their own icon, or have one designed from the shuttle or ringed-planet mark
 - [ ] Rename the résumé file Olivier-Balmokune-Resume.pdf — waiting on the user's updated résumé
-- [ ] Replace the four demo thumbnails with the user's own images (same filenames, 940×528)
+
+## Done this round (user-supplied, verified in preview)
+- [x] Favicon replaced with the user's own icon (public/favicon.svg + favicon.ico, loads 200)
+- [x] Four demo thumbnails replaced with the user's screenshots (940×528, same filenames, all render)
+- [x] Contact form tested working by the user (Web3Forms delivers; the form posts client-side with no backend)
