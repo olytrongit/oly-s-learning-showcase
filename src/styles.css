@@ -146,7 +146,7 @@ h1,h2,h3,p { overflow-wrap: break-word; }
 .text-link { display: inline-flex; align-items: center; gap: .4rem; width: fit-content; font-weight: 700; border-bottom: 2px solid var(--coral); }
 .text-link:hover svg { transform: translateX(3px); }.text-link svg { transition: transform .2s ease; }
 .case-grid,.index-list { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; }
-.case-card { min-width: 0; display: grid; grid-template-columns: 38% 62%; min-height: 390px; overflow: hidden; border: 1px solid var(--border); border-radius: 8px; background: var(--paper); transition: transform .25s ease, box-shadow .25s ease; }
+.case-card { position: relative; min-width: 0; display: grid; grid-template-columns: 38% 62%; min-height: 390px; overflow: hidden; border: 1px solid var(--border); border-radius: 8px; background: var(--paper); transition: transform .25s ease, box-shadow .25s ease; }
 .case-card:hover { transform: translateY(-4px); box-shadow: 0 20px 44px color-mix(in oklab, var(--ink) 10%, transparent); }
 .case-card--featured { grid-column: 1 / -1; grid-template-columns: 52% 48%; min-height: 450px; }
 .case-card__visual { position: relative; min-height: 230px; overflow: hidden; background: var(--accent-local); }
@@ -236,3 +236,6 @@ h1,h2,h3,p { overflow-wrap: break-word; }
 .next-study a svg { transition: transform .2s ease; }
 .next-study a:hover svg { transform: translateX(4px); }
 .next-study a:focus-visible { outline: 3px solid var(--coral); outline-offset: 4px; border-radius: 4px; }
+
+/* Whole case-study card is clickable: the "Read case study" link stretches over the card */
+.case-card .text-link::after { content: ""; position: absolute; inset: 0; z-index: 3; }

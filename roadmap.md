@@ -16,6 +16,7 @@
 - [x] Supporting-work video thumbnails: all eleven videos now show their own picture (Dewey Water Works, Our Time, Recruitment, At the Doctor's, Yoga Legends, Windsage, Windsor Tunnel, Finding Joy, Starjourn, Stole My Heart, Digital Winnifred).
 
 ## Open
+- [x] Make the whole case-study card clickable on /case-studies and the home page (stretched link over the card; verified picture, title, keyboard and phone taps all open the study)
 - [ ] Rename the résumé file Olivier-Balmokune-Resume.pdf — waiting on the user's updated résumé
 
 ## Done this round (user-supplied, verified in preview)
