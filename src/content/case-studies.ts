@@ -30,7 +30,7 @@ export type CaseStudy = {
   buildImage?: string;
   buildImageAlt?: string;
   videos?: { title: string; youtubeId: string; poster: string }[];
-  demos?: { title: string; purpose: string; href: string }[];
+  demos?: { title: string; purpose: string; href: string; thumb?: string }[];
 };
 
 export const caseStudies: CaseStudy[] = [
@@ -134,7 +134,7 @@ export const caseStudies: CaseStudy[] = [
     buildImage: storylineBuild.url,
     buildImageAlt: "A Waterworks Jeopardy game screen showing a multiple-choice question about which measurement shows whether water is too acidic, with four answer buttons: Turbidity, Salinity, pH, and Density",
     demos: [
-      { title: "NDA Drag & Drop", purpose: "Interactive assessment", href: "/demos/nda/story.html" },
+      { title: "NDA Drag & Drop", purpose: "Interactive assessment", href: "/demos/nda/story.html", thumb: "/images/demo-nda.jpg" },
       { title: "Waterworks Jeopardy", purpose: "Gamified review", href: "/demos/jeopardy/story.html" },
       { title: "Metal Memory Match", purpose: "Game-based recall", href: "/demos/memory/story.html" },
       { title: "Intro to Nimble 2e", purpose: "Onboarding introduction", href: "/demos/nimble/story.html" },

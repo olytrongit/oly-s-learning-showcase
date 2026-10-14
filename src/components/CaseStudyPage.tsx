@@ -47,7 +47,7 @@ export function CaseStudyPage({ study }: { study: CaseStudy }) {
             <div className="demo-grid">
               {study.demos.map((demo) => (
                 <a key={demo.title} href={demo.href} target="_blank" rel="noreferrer" aria-label={`Launch ${demo.title} demo (opens in a new tab)`}>
-                  <img src={demo.href.replace("story.html", "story_content/thumbnail.jpg")} alt="" loading="lazy" />
+                  <img src={demo.thumb ?? demo.href.replace("story.html", "story_content/thumbnail.jpg")} alt="" loading="lazy" />
                   <div className="demo-grid__body">
                     <span>Storyline 360 · {demo.purpose}</span>
                     <strong>{demo.title}</strong>
