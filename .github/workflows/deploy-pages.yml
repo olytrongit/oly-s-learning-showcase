@@ -28,6 +28,18 @@ jobs:
 
       # bun.lock points at Lovable's private package cache, which GitHub can't
       # reach, so install from the public npm registry instead.
+      # Lovable's image uploads live in its own storage, which doesn't exist on
+      # olytron.com. Stop here with a clear message instead of publishing broken images.
+      - name: Check images are stored in public/images
+        run: |
+          hits=$(grep -rnE "\.asset\.json|/__l5e/" src --include=*.ts --include=*.tsx --include=*.css || true)
+          if [ -n "$hits" ]; then
+            msg=$(echo "$hits" | head -20 | awk '{printf "%s%%0A", $0}')
+            echo "::error title=Image stored in Lovable, not in public/images::Move these images into public/images and reference them as /images/<file>. The live site was NOT updated.%0A${msg}"
+            exit 1
+          fi
+          echo "ok: no Lovable-hosted images referenced"
+
       - name: Install dependencies
         run: |
           rm -f bun.lock package-lock.json
