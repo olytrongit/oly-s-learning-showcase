@@ -229,3 +229,10 @@ h1,h2,h3,p { overflow-wrap: break-word; }
 /* Video thumbnail hover lift (matches case-card lift) */
 .video-poster { transition: transform .2s ease, box-shadow .2s ease; }
 .video-poster:hover { transform: translateY(-4px); box-shadow: 0 20px 44px color-mix(in oklab, var(--ink) 10%, transparent); }
+
+/* Next case study link: lift + colour shift (matches demo-jump and case-card hover) */
+.next-study a { color: var(--ink); transition: transform .2s ease, color .2s ease; }
+.next-study a:hover { color: var(--coral); transform: translateY(-3px); }
+.next-study a svg { transition: transform .2s ease; }
+.next-study a:hover svg { transform: translateX(4px); }
+.next-study a:focus-visible { outline: 3px solid var(--coral); outline-offset: 4px; border-radius: 4px; }
