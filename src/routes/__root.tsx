@@ -69,6 +69,17 @@ function ErrorComponent({ error, reset }: ErrorComponentProps) {
             Go home
           </a>
         </div>
+        {/* Diagnostic: shows the underlying error so device-specific crashes can be reported. */}
+        <details className="mt-6 text-left text-xs text-muted-foreground">
+          <summary className="cursor-pointer text-center">Details</summary>
+          <pre className="mt-2 whitespace-pre-wrap break-words">
+            {String((error as Error)?.name ?? "Error")}: {String((error as Error)?.message ?? error)}
+            {"\n\n"}
+            {String((error as Error)?.stack ?? "").split("\n").slice(0, 6).join("\n")}
+            {"\n\n"}
+            {typeof navigator !== "undefined" ? navigator.userAgent : ""}
+          </pre>
+        </details>
       </div>
     </div>
   );
