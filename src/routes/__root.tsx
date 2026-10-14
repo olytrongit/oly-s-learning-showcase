@@ -36,10 +36,33 @@ function NotFoundComponent() {
   );
 }
 
+// After a redeploy, a page that was already open (or cached) can request a code
+// file that no longer exists. Each browser words that failure differently.
+const STALE_CHUNK_ERROR =
+  /Failed to fetch dynamically imported module|Importing a module script failed|error loading dynamically imported module|Unable to preload CSS|ChunkLoadError|Loading chunk .* failed/i;
+
+// Reload once to pick up the current version. The timestamp guard stops a
+// reload loop if the error has some other cause.
+function reloadOnceForStaleChunk(error: unknown): boolean {
+  const message = String((error as Error)?.message ?? error);
+  if (typeof window === "undefined" || !STALE_CHUNK_ERROR.test(message)) return false;
+  try {
+    const key = "olytron-stale-chunk-reload";
+    const last = Number(sessionStorage.getItem(key) ?? 0);
+    if (Date.now() - last < 15000) return false;
+    sessionStorage.setItem(key, String(Date.now()));
+  } catch {
+    // Storage unavailable (e.g. private mode restrictions): still try one reload.
+  }
+  window.location.reload();
+  return true;
+}
+
 function ErrorComponent({ error, reset }: ErrorComponentProps) {
   console.error(error);
   const router = useRouter();
   useEffect(() => {
+    if (reloadOnceForStaleChunk(error)) return;
     reportLovableError(error, { boundary: "tanstack_root_error_component" });
   }, [error]);
 
@@ -69,17 +92,6 @@ function ErrorComponent({ error, reset }: ErrorComponentProps) {
             Go home
           </a>
         </div>
-        {/* Diagnostic: shows the underlying error so device-specific crashes can be reported. */}
-        <details className="mt-6 text-left text-xs text-muted-foreground">
-          <summary className="cursor-pointer text-center">Details</summary>
-          <pre className="mt-2 whitespace-pre-wrap break-words">
-            {String((error as Error)?.name ?? "Error")}: {String((error as Error)?.message ?? error)}
-            {"\n\n"}
-            {String((error as Error)?.stack ?? "").split("\n").slice(0, 6).join("\n")}
-            {"\n\n"}
-            {typeof navigator !== "undefined" ? navigator.userAgent : ""}
-          </pre>
-        </details>
       </div>
     </div>
   );
