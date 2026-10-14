@@ -137,7 +137,7 @@ export const caseStudies: CaseStudy[] = [
       { title: "NDA Drag & Drop", purpose: "Interactive assessment", href: "/demos/nda/story.html", thumb: "/images/demo-nda.jpg" },
       { title: "Waterworks Jeopardy", purpose: "Gamified review", href: "/demos/jeopardy/story.html" },
       { title: "Metal Memory Match", purpose: "Game-based recall", href: "/demos/memory/story.html", thumb: "/images/demo-memory.jpg" },
-      { title: "Intro to Nimble 2e", purpose: "Onboarding introduction", href: "/demos/nimble/story.html" },
+      { title: "Intro to Nimble 2e", purpose: "Onboarding introduction", href: "/demos/nimble/story.html", thumb: "/images/demo-nimble.jpg" },
     ],
   },
 ];
